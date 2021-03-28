@@ -1,0 +1,2332 @@
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-06 16:58:13 - False - False
+2021-03-06 17:00:13 - False - False
+2021-03-06 17:02:13 - False - False
+2021-03-06 17:04:13 - False - False
+2021-03-06 17:06:13 - False - False
+2021-03-06 17:08:13 - False - False
+2021-03-06 17:10:13 - False - False
+2021-03-06 17:12:13 - False - False
+2021-03-06 17:14:13 - False - False
+2021-03-06 17:16:13 - False - False
+2021-03-06 17:18:13 - False - False
+2021-03-06 17:20:13 - False - False
+2021-03-06 17:22:13 - False - False
+2021-03-06 17:24:13 - False - False
+2021-03-06 17:26:13 - False - False
+2021-03-06 17:28:13 - False - False
+2021-03-06 17:30:13 - False - False
+2021-03-06 17:32:13 - False - False
+2021-03-06 17:34:13 - False - False
+2021-03-06 17:36:13 - False - False
+2021-03-06 17:38:13 - False - False
+2021-03-06 17:40:13 - False - False
+2021-03-06 17:42:13 - False - False
+2021-03-06 17:44:13 - False - False
+2021-03-06 17:46:13 - False - False
+2021-03-06 17:48:13 - False - False
+2021-03-06 17:50:13 - False - False
+2021-03-06 17:52:13 - False - False
+2021-03-06 17:54:13 - False - False
+2021-03-06 17:56:13 - True - False
+2021-03-06 17:58:13 - False - False
+2021-03-06 18:00:13 - False - False
+2021-03-06 18:02:13 - False - False
+2021-03-06 18:04:13 - False - False
+2021-03-06 18:06:13 - False - False
+2021-03-06 18:08:13 - False - False
+2021-03-06 18:10:13 - False - False
+2021-03-06 18:12:13 - False - False
+2021-03-06 18:14:13 - False - False
+2021-03-06 18:16:13 - False - False
+2021-03-06 18:18:13 - False - False
+2021-03-06 18:20:13 - False - False
+2021-03-06 18:22:13 - False - False
+2021-03-06 18:24:13 - False - False
+2021-03-06 18:26:13 - False - False
+2021-03-06 18:28:13 - False - False
+2021-03-06 18:30:13 - False - False
+2021-03-06 18:32:13 - False - False
+2021-03-06 18:34:13 - False - False
+2021-03-06 18:36:13 - False - False
+2021-03-06 18:38:13 - False - False
+2021-03-06 18:40:13 - False - False
+2021-03-06 18:42:13 - False - False
+2021-03-06 18:44:13 - False - False
+2021-03-06 18:46:13 - False - False
+2021-03-06 18:48:13 - False - False
+2021-03-06 18:50:13 - False - False
+2021-03-06 18:52:13 - False - False
+2021-03-06 18:54:13 - False - False
+2021-03-06 18:56:13 - False - False
+2021-03-06 18:58:13 - False - False
+2021-03-06 19:00:13 - False - False
+2021-03-06 19:02:13 - False - False
+2021-03-06 19:04:13 - False - False
+2021-03-06 19:06:13 - False - False
+2021-03-06 19:08:13 - False - False
+2021-03-06 19:10:13 - False - False
+2021-03-06 19:12:13 - False - False
+2021-03-06 19:14:13 - False - False
+2021-03-06 19:16:13 - False - False
+2021-03-06 19:18:13 - False - False
+2021-03-06 19:20:13 - False - False
+2021-03-06 19:22:13 - False - False
+2021-03-06 19:24:13 - False - False
+2021-03-06 19:26:13 - False - False
+2021-03-06 19:28:13 - False - False
+2021-03-06 19:30:13 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-06 19:31:38 - False - False
+2021-03-06 19:33:38 - False - False
+2021-03-06 19:35:38 - False - False
+2021-03-06 19:37:38 - False - False
+2021-03-06 19:39:38 - False - False
+2021-03-06 19:41:38 - False - False
+2021-03-06 19:43:38 - False - False
+2021-03-06 19:45:38 - False - False
+2021-03-06 19:47:38 - False - False
+2021-03-06 19:49:38 - False - False
+2021-03-06 19:51:38 - False - False
+2021-03-06 19:53:38 - False - False
+2021-03-06 19:55:38 - False - False
+2021-03-06 19:57:38 - False - False
+2021-03-06 19:59:38 - False - False
+2021-03-06 20:01:38 - False - False
+2021-03-06 20:03:38 - False - False
+2021-03-06 20:05:38 - False - False
+2021-03-06 20:07:38 - False - False
+2021-03-06 20:09:38 - False - False
+2021-03-06 20:11:38 - False - False
+2021-03-06 20:13:38 - False - False
+2021-03-06 20:15:38 - False - False
+2021-03-06 20:17:38 - True - False
+2021-03-06 20:19:38 - True - False
+2021-03-06 20:21:38 - False - False
+2021-03-06 20:23:38 - False - False
+2021-03-06 20:25:38 - False - False
+2021-03-06 20:27:38 - False - False
+2021-03-06 20:29:38 - False - False
+2021-03-06 20:31:38 - False - False
+2021-03-06 20:33:38 - False - False
+2021-03-06 20:35:38 - False - False
+2021-03-06 20:37:38 - False - False
+2021-03-06 20:39:38 - False - False
+2021-03-06 20:41:38 - False - False
+2021-03-06 20:43:38 - False - False
+2021-03-06 20:45:38 - False - False
+2021-03-06 20:47:38 - False - False
+2021-03-06 20:49:38 - False - False
+2021-03-06 20:51:38 - False - False
+2021-03-06 20:53:38 - False - False
+2021-03-06 20:55:38 - False - False
+2021-03-06 20:57:38 - False - False
+2021-03-06 20:59:38 - False - False
+2021-03-06 21:01:38 - False - False
+2021-03-06 21:03:38 - False - False
+2021-03-06 21:05:38 - False - False
+2021-03-06 21:07:38 - False - False
+2021-03-06 21:09:38 - False - False
+2021-03-06 21:11:38 - False - False
+2021-03-06 21:13:38 - False - False
+2021-03-06 21:15:38 - False - False
+2021-03-06 21:17:38 - False - False
+2021-03-06 21:19:38 - False - False
+2021-03-06 21:21:38 - False - False
+2021-03-06 21:23:38 - False - False
+2021-03-06 21:25:38 - False - False
+2021-03-06 21:27:38 - False - False
+2021-03-06 21:29:38 - False - False
+2021-03-06 21:31:38 - False - False
+2021-03-06 21:33:38 - False - False
+2021-03-06 21:35:38 - False - False
+2021-03-06 21:37:38 - False - False
+2021-03-06 21:39:38 - False - False
+2021-03-06 21:41:38 - False - False
+2021-03-06 21:43:38 - False - False
+2021-03-06 21:45:38 - False - False
+2021-03-06 21:47:38 - False - False
+2021-03-06 21:49:38 - False - False
+2021-03-06 21:51:38 - False - False
+2021-03-06 21:53:38 - False - False
+2021-03-06 21:55:38 - False - False
+2021-03-06 21:57:38 - False - False
+2021-03-06 21:59:38 - False - False
+2021-03-06 22:01:38 - False - False
+2021-03-06 22:03:38 - False - False
+2021-03-06 22:05:38 - False - False
+2021-03-06 22:07:38 - False - False
+2021-03-06 22:09:38 - False - False
+2021-03-06 22:11:38 - False - False
+2021-03-06 22:13:38 - False - False
+2021-03-06 22:15:38 - False - False
+2021-03-06 22:17:38 - False - False
+2021-03-06 22:19:38 - False - False
+2021-03-06 22:21:38 - False - False
+2021-03-06 22:23:38 - False - False
+2021-03-06 22:25:38 - False - False
+2021-03-06 22:27:38 - False - False
+2021-03-06 22:29:38 - False - False
+2021-03-06 22:31:38 - False - False
+2021-03-06 22:33:38 - False - False
+2021-03-06 22:35:38 - False - False
+2021-03-06 22:37:38 - False - False
+2021-03-06 22:39:38 - False - False
+2021-03-06 22:41:38 - False - False
+2021-03-06 22:43:38 - False - False
+2021-03-06 22:45:38 - False - False
+2021-03-06 22:47:38 - False - False
+2021-03-06 22:49:38 - False - False
+2021-03-06 22:51:38 - False - False
+2021-03-06 22:53:38 - False - False
+2021-03-06 22:55:38 - False - False
+2021-03-06 22:57:38 - False - False
+2021-03-06 22:59:38 - False - False
+2021-03-06 23:01:38 - False - False
+2021-03-06 23:03:38 - False - False
+2021-03-06 23:05:38 - False - False
+2021-03-06 23:07:38 - False - False
+2021-03-06 23:09:38 - False - False
+2021-03-06 23:11:38 - False - False
+2021-03-06 23:13:38 - False - False
+2021-03-06 23:15:38 - False - False
+2021-03-06 23:17:38 - False - False
+2021-03-06 23:19:38 - False - False
+2021-03-06 23:21:38 - False - False
+2021-03-06 23:23:38 - False - False
+2021-03-06 23:25:38 - False - False
+2021-03-06 23:27:38 - False - False
+2021-03-06 23:29:38 - False - False
+2021-03-06 23:31:38 - False - False
+2021-03-06 23:33:38 - False - False
+2021-03-06 23:35:38 - False - False
+2021-03-06 23:37:38 - False - False
+2021-03-06 23:39:38 - False - False
+2021-03-06 23:41:38 - False - False
+2021-03-06 23:43:38 - False - False
+2021-03-06 23:45:38 - False - False
+2021-03-06 23:47:38 - False - False
+2021-03-06 23:49:38 - False - False
+2021-03-06 23:51:38 - False - False
+2021-03-06 23:53:38 - False - False
+2021-03-06 23:55:38 - False - False
+2021-03-06 23:57:38 - False - False
+2021-03-06 23:59:38 - False - False
+2021-03-07 00:01:38 - False - False
+2021-03-07 00:03:38 - False - False
+2021-03-07 00:05:38 - False - False
+2021-03-07 00:07:38 - False - False
+2021-03-07 00:09:38 - False - False
+2021-03-07 00:11:38 - False - False
+2021-03-07 00:13:38 - False - False
+2021-03-07 00:15:38 - False - False
+2021-03-07 00:17:38 - False - False
+2021-03-07 00:19:38 - False - False
+2021-03-07 00:21:38 - False - False
+2021-03-07 00:23:38 - False - False
+2021-03-07 00:25:38 - False - False
+2021-03-07 00:27:38 - False - False
+2021-03-07 00:29:38 - False - False
+2021-03-07 00:31:38 - False - False
+2021-03-07 00:33:38 - False - False
+2021-03-07 00:35:38 - False - False
+2021-03-07 00:37:38 - False - False
+2021-03-07 00:39:38 - False - False
+2021-03-07 00:41:38 - False - False
+2021-03-07 00:43:38 - False - False
+2021-03-07 00:45:38 - False - False
+2021-03-07 00:47:38 - False - False
+2021-03-07 00:49:38 - False - False
+2021-03-07 00:51:38 - False - False
+2021-03-07 00:53:38 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-07 15:08:05 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 15:12:07 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 15:11:57 - False - False
+2021-03-07 15:12:17 - False - False
+2021-03-07 15:12:27 - False - False
+2021-03-07 15:12:37 - False - False
+2021-03-07 15:12:47 - False - False
+2021-03-07 15:12:57 - False - False
+2021-03-07 15:13:07 - False - False
+2021-03-07 15:13:17 - False - False
+2021-03-07 15:13:27 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 15:35:09 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 15:34:59 - False - False
+2021-03-07 15:35:19 - False - False
+2021-03-07 15:35:29 - False - False
+2021-03-07 15:35:39 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-07 15:42:23 - False - False
+2021-03-07 15:42:33 - False - False
+2021-03-07 15:42:43 - False - False
+2021-03-07 15:42:53 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-07 15:45:05 - False - False
+2021-03-07 15:45:15 - False - False
+2021-03-07 15:45:25 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 16:06:21 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 16:06:11 - False - False
+2021-03-07 16:06:31 - False - False
+2021-03-07 16:06:41 - False - False
+2021-03-07 16:06:51 - False - False
+2021-03-07 16:07:01 - False - False
+2021-03-07 16:07:11 - False - False
+2021-03-07 16:07:21 - False - False
+2021-03-07 16:07:31 - False - False
+2021-03-07 16:07:41 - False - False
+2021-03-07 16:07:51 - False - False
+2021-03-07 16:08:01 - False - False
+2021-03-07 16:08:11 - False - False
+2021-03-07 16:08:21 - False - False
+2021-03-07 16:08:31 - False - False
+2021-03-07 16:08:41 - False - False
+2021-03-07 16:08:51 - False - False
+2021-03-07 16:09:01 - False - False
+2021-03-07 16:09:11 - False - False
+2021-03-07 16:09:21 - False - False
+2021-03-07 16:09:31 - False - False
+2021-03-07 16:09:41 - False - False
+2021-03-07 16:09:51 - False - False
+2021-03-07 16:10:01 - False - False
+2021-03-07 16:10:11 - False - False
+2021-03-07 16:10:21 - False - False
+2021-03-07 16:10:31 - False - False
+2021-03-07 16:10:41 - False - False
+2021-03-07 16:10:51 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-07 19:57:14 - False - False
+2021-03-07 19:57:24 - False - False
+2021-03-07 19:57:34 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:02:01 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:01:51 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:03:07 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:02:57 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:03:53 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:04:03 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:04:13 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:04:23 PST)" skipped: maximum number of running instances reached (1)
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-07 20:05:35 - False - False
+2021-03-07 20:05:45 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:13:13 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:13:03 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:13:54 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:13:44 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:14:48 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:14:58 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:15:08 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:15:18 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:15:28 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:15:38 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:15:48 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:15:58 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:16:08 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:16:18 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:16:28 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:16:38 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:16:48 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:16:58 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:17:08 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:17:18 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:17:28 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:17:38 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:17:48 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:18:08 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:18:38 PST)" skipped: maximum number of running instances reached (1)
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:18:58 PST)" skipped: maximum number of running instances reached (1)
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-07 20:22:14 - False - False
+2021-03-07 20:22:24 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:27:25 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:27:15 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:31:17 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:31:07 - False - False
+2021-03-07 20:31:27 - False - False
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:31:47 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:31:37 - False - False
+2021-03-07 20:31:57 - False - False
+2021-03-07 20:32:07 - False - False
+Job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:32:27 PST)" raised an exception
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 276, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jose/.local/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "amzn_ps5_stock_chkr_fcm.py", line 70, in report_availability
+    availability = check_availability(url)
+  File "amzn_ps5_stock_chkr_fcm.py", line 56, in check_availability
+    driver.get(url)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3/dist-packages/urllib3/request.py", line 79, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/poolmanager.py", line 330, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 702, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 276, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:36:25 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:36:15 - False - False
+2021-03-07 20:36:35 - False - False
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:36:55 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:36:45 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:38:18 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:38:08 - False - False
+2021-03-07 20:38:28 - False - False
+2021-03-07 20:38:38 - False - False
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:38:58 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:38:48 - False - False
+2021-03-07 20:39:08 - False - False
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:39:28 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:39:18 - False - False
+Job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:39:48 PST)" raised an exception
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 276, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jose/.local/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "amzn_ps5_stock_chkr_fcm.py", line 71, in report_availability
+    availability = check_availability(url)
+  File "amzn_ps5_stock_chkr_fcm.py", line 57, in check_availability
+    driver.get(url)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3/dist-packages/urllib3/request.py", line 79, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/poolmanager.py", line 330, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 702, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 276, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-07 20:46:27 - False - False
+2021-03-07 20:46:37 - False - False
+2021-03-07 20:46:47 - False - False
+2021-03-07 20:46:57 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 20:47:30 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 20:47:20 - False - False
+2021-03-07 20:47:40 - False - False
+2021-03-07 20:47:50 - False - False
+2021-03-07 20:48:00 - False - False
+2021-03-07 20:48:10 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 21:08:31 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 21:08:21 - False - False
+2021-03-07 21:08:41 - False - False
+2021-03-07 21:08:51 - False - False
+2021-03-07 21:09:01 - False - False
+2021-03-07 21:09:11 - False - False
+2021-03-07 21:09:21 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 21:22:49 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 21:22:39 - False - False
+2021-03-07 21:22:59 - False - False
+2021-03-07 21:23:09 - False - False
+2021-03-07 21:23:19 - False - False
+2021-03-07 21:23:29 - False - False
+2021-03-07 21:23:39 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 21:25:41 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 21:25:31 - False - False
+2021-03-07 21:25:51 - False - False
+2021-03-07 21:26:01 - False - False
+2021-03-07 21:26:11 - False - False
+2021-03-07 21:26:21 - False - False
+2021-03-07 21:26:31 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Execution of job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 21:29:17 PST)" skipped: maximum number of running instances reached (1)
+2021-03-07 21:29:07 - False - False
+2021-03-07 21:29:27 - False - False
+2021-03-07 21:29:37 - False - False
+2021-03-07 21:29:47 - False - False
+2021-03-07 21:29:57 - False - False
+2021-03-07 21:30:07 - False - False
+2021-03-07 21:30:17 - False - False
+2021-03-07 21:30:27 - False - False
+2021-03-07 21:30:37 - False - False
+2021-03-07 21:30:47 - False - False
+2021-03-07 21:30:57 - False - False
+2021-03-07 21:31:07 - False - False
+2021-03-07 21:31:17 - False - False
+2021-03-07 21:31:27 - False - False
+2021-03-07 21:31:37 - False - False
+2021-03-07 21:31:47 - False - False
+2021-03-07 21:31:57 - False - False
+2021-03-07 21:32:07 - False - False
+2021-03-07 21:32:17 - False - False
+2021-03-07 21:32:27 - False - False
+2021-03-07 21:32:37 - False - False
+2021-03-07 21:32:47 - False - False
+2021-03-07 21:32:57 - False - False
+2021-03-07 21:33:07 - False - False
+2021-03-07 21:33:17 - False - False
+2021-03-07 21:33:27 - False - False
+2021-03-07 21:33:37 - False - False
+2021-03-07 21:33:47 - False - False
+2021-03-07 21:33:57 - False - False
+Job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 21:34:17 PST)" raised an exception
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 276, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jose/.local/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "amzn_ps5_stock_chkr_fcm.py", line 71, in report_availability
+    availability = check_availability(url)
+  File "amzn_ps5_stock_chkr_fcm.py", line 57, in check_availability
+    driver.get(url)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3/dist-packages/urllib3/request.py", line 79, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/poolmanager.py", line 330, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 702, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 276, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-07 21:38:59 - False - False
+2021-03-07 21:39:09 - False - False
+2021-03-07 21:39:19 - False - False
+2021-03-07 21:39:29 - False - False
+2021-03-07 21:39:39 - False - False
+2021-03-07 21:39:49 - False - False
+2021-03-07 21:39:59 - False - False
+2021-03-07 21:40:09 - False - False
+2021-03-07 21:40:19 - False - False
+2021-03-07 21:40:29 - False - False
+2021-03-07 21:40:39 - False - False
+2021-03-07 21:40:49 - False - False
+2021-03-07 21:40:59 - False - False
+2021-03-07 21:41:09 - False - False
+2021-03-07 21:41:19 - False - False
+2021-03-07 21:41:29 - False - False
+2021-03-07 21:41:39 - False - False
+2021-03-07 21:41:49 - False - False
+Job "report_availability (trigger: interval[0:00:10], next run at: 2021-03-07 21:42:09 PST)" raised an exception
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 276, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/jose/.local/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "amzn_ps5_stock_chkr_fcm.py", line 88, in report_availability
+    availability = check_availability(url)
+  File "amzn_ps5_stock_chkr_fcm.py", line 74, in check_availability
+    driver.get(url)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 319, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 374, in execute
+    return self._request(command_info[0], url, body=data)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/remote_connection.py", line 397, in _request
+    resp = self._conn.request(method, url, body=body, headers=headers)
+  File "/usr/lib/python3/dist-packages/urllib3/request.py", line 79, in request
+    return self.request_encode_body(
+  File "/usr/lib/python3/dist-packages/urllib3/request.py", line 171, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/usr/lib/python3/dist-packages/urllib3/poolmanager.py", line 330, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 719, in urlopen
+    retries = retries.increment(
+  File "/usr/lib/python3/dist-packages/urllib3/util/retry.py", line 400, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/usr/lib/python3/dist-packages/six.py", line 702, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1347, in getresponse
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 307, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 276, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-07 21:42:28 - False - False
+2021-03-07 21:42:58 - False - False
+2021-03-07 21:43:28 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-07 21:44:29 - False - False
+2021-03-07 21:44:59 - False - False
+2021-03-07 21:45:29 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-07 21:46:19 - False - False
+2021-03-07 21:46:49 - False - False
+2021-03-07 21:47:19 - False - False
+2021-03-07 21:47:49 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+Job "report_availability (trigger: interval[0:00:30], next run at: 2021-03-08 13:36:41 PST)" raised an exception
+Traceback (most recent call last):
+  File "/home/jose/.local/lib/python3.8/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "amzn_ps5_stock_chkr_fcm.py", line 88, in report_availability
+    availability = check_availability(url)
+  File "amzn_ps5_stock_chkr_fcm.py", line 74, in check_availability
+    driver.get(url)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 333, in get
+    self.execute(Command.GET, {'url': url})
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "/home/jose/.local/lib/python3.8/site-packages/selenium/webdriver/remote/errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=83.0.4103.97)
+
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-08 14:52:44 - False - False
+2021-03-08 14:52:54 - False - False
+2021-03-08 14:53:04 - False - False
+2021-03-08 14:53:14 - False - False
+2021-03-08 14:53:24 - False - False
+2021-03-08 14:53:34 - False - False
+2021-03-08 14:53:44 - False - False
+2021-03-08 14:53:54 - False - False
+2021-03-08 14:54:04 - False - False
+2021-03-08 14:54:14 - False - False
+2021-03-08 14:54:24 - False - False
+2021-03-08 14:54:34 - False - False
+2021-03-08 14:54:44 - False - False
+2021-03-08 14:54:54 - False - False
+2021-03-08 14:55:04 - False - False
+2021-03-08 14:55:14 - False - False
+2021-03-08 14:55:24 - False - False
+2021-03-08 14:55:34 - False - False
+2021-03-08 14:55:44 - False - False
+2021-03-08 14:55:54 - False - False
+2021-03-08 14:56:04 - False - False
+2021-03-08 14:56:14 - False - False
+2021-03-08 14:56:24 - False - False
+2021-03-08 14:56:34 - False - False
+2021-03-08 14:56:44 - False - False
+2021-03-08 14:56:54 - False - False
+2021-03-08 14:57:04 - False - False
+2021-03-08 14:57:14 - False - False
+2021-03-08 14:57:24 - False - False
+2021-03-08 14:57:34 - False - False
+2021-03-08 14:57:44 - False - False
+2021-03-08 14:57:54 - False - False
+2021-03-08 14:58:04 - False - False
+2021-03-08 14:58:14 - False - False
+2021-03-08 14:58:24 - False - False
+2021-03-08 14:58:34 - False - False
+2021-03-08 14:58:44 - False - False
+2021-03-08 14:58:54 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-08 15:37:50 - False - False
+2021-03-08 15:39:20 - False - False
+2021-03-08 15:40:50 - False - False
+2021-03-08 15:42:20 - False - False
+2021-03-08 15:43:50 - False - False
+2021-03-08 15:45:20 - False - False
+2021-03-08 15:46:50 - False - False
+2021-03-08 15:48:20 - False - False
+2021-03-08 15:49:50 - False - False
+2021-03-08 15:51:20 - False - False
+2021-03-08 15:52:50 - False - False
+2021-03-08 15:54:20 - False - False
+2021-03-08 15:55:50 - False - False
+2021-03-08 15:57:20 - False - False
+2021-03-08 15:58:50 - False - False
+2021-03-08 16:00:20 - False - False
+2021-03-08 16:01:50 - False - False
+2021-03-08 16:03:20 - False - False
+2021-03-08 16:04:50 - False - False
+2021-03-08 16:06:20 - False - False
+2021-03-08 16:07:50 - False - False
+2021-03-08 16:09:20 - False - False
+2021-03-08 16:10:50 - False - False
+2021-03-08 16:12:20 - False - False
+2021-03-08 16:13:50 - False - False
+2021-03-08 16:15:20 - False - False
+2021-03-08 16:16:50 - False - False
+2021-03-08 16:18:20 - False - False
+2021-03-08 16:19:50 - False - False
+2021-03-08 16:21:20 - False - False
+2021-03-08 16:22:50 - False - False
+2021-03-08 16:24:20 - False - False
+2021-03-08 16:25:50 - False - False
+2021-03-08 16:27:20 - False - False
+2021-03-08 16:28:50 - False - False
+2021-03-08 16:30:20 - False - False
+2021-03-08 16:31:50 - False - False
+2021-03-08 16:33:20 - False - False
+2021-03-08 16:34:50 - False - False
+2021-03-08 16:36:20 - False - False
+2021-03-08 16:37:50 - False - False
+2021-03-08 16:39:20 - False - False
+2021-03-08 16:40:50 - False - False
+2021-03-08 16:42:20 - False - False
+2021-03-08 16:43:50 - False - False
+2021-03-08 16:45:20 - False - False
+2021-03-08 16:46:50 - False - False
+2021-03-08 16:48:20 - False - False
+2021-03-08 16:49:50 - False - False
+2021-03-08 16:51:20 - False - False
+2021-03-08 16:52:50 - False - False
+2021-03-08 16:54:20 - False - False
+2021-03-08 16:55:50 - False - False
+2021-03-08 16:57:20 - False - False
+2021-03-08 16:58:50 - False - False
+2021-03-08 17:00:20 - False - False
+2021-03-08 17:01:50 - False - False
+2021-03-08 17:03:20 - False - False
+2021-03-08 17:04:50 - False - False
+2021-03-08 17:06:20 - False - False
+2021-03-08 17:07:50 - False - False
+2021-03-08 17:09:20 - False - False
+2021-03-08 17:10:50 - False - False
+2021-03-08 17:12:20 - False - False
+2021-03-08 17:13:50 - False - False
+2021-03-08 17:15:20 - False - False
+2021-03-08 17:16:50 - False - False
+2021-03-08 17:18:20 - False - False
+2021-03-08 17:19:50 - False - False
+2021-03-08 17:21:20 - False - False
+2021-03-08 17:22:50 - False - False
+2021-03-08 17:24:20 - False - False
+2021-03-08 17:25:50 - False - False
+2021-03-08 17:27:20 - False - False
+2021-03-08 17:28:50 - False - False
+2021-03-08 17:30:20 - False - False
+2021-03-08 17:31:50 - False - False
+2021-03-08 17:33:20 - False - False
+2021-03-08 17:34:50 - False - False
+2021-03-08 17:36:20 - False - False
+2021-03-08 17:37:50 - False - False
+2021-03-08 17:39:20 - False - False
+2021-03-08 17:40:50 - False - False
+2021-03-08 17:42:20 - False - False
+2021-03-08 17:43:50 - False - False
+2021-03-08 17:45:20 - False - False
+2021-03-08 17:46:50 - False - False
+2021-03-08 17:48:20 - False - False
+2021-03-08 17:49:50 - False - False
+2021-03-08 17:51:20 - False - False
+2021-03-08 17:52:50 - False - False
+2021-03-08 17:54:20 - False - False
+2021-03-08 17:55:50 - False - False
+2021-03-08 17:57:20 - False - False
+2021-03-08 17:58:50 - False - False
+2021-03-08 18:00:20 - False - False
+2021-03-08 18:01:50 - False - False
+2021-03-08 18:03:20 - False - False
+2021-03-08 18:04:50 - False - False
+2021-03-08 18:06:20 - False - False
+2021-03-08 18:07:50 - False - False
+2021-03-08 18:09:20 - False - False
+2021-03-08 18:10:50 - False - False
+2021-03-08 18:12:20 - False - False
+2021-03-08 18:13:50 - False - False
+2021-03-08 18:15:20 - False - False
+2021-03-08 18:16:50 - False - False
+2021-03-08 18:18:20 - False - False
+2021-03-08 18:19:50 - False - False
+2021-03-08 18:21:20 - False - False
+2021-03-08 18:22:50 - False - False
+2021-03-08 18:24:20 - False - False
+2021-03-08 18:25:50 - False - False
+2021-03-08 18:27:20 - False - False
+2021-03-08 18:28:50 - False - False
+2021-03-08 18:30:20 - False - False
+2021-03-08 18:31:50 - False - False
+2021-03-08 18:33:20 - False - False
+2021-03-08 18:34:50 - False - False
+2021-03-08 18:36:20 - False - False
+2021-03-08 18:37:50 - False - False
+2021-03-08 18:39:20 - False - False
+2021-03-08 18:40:50 - False - False
+2021-03-08 18:42:20 - False - False
+2021-03-08 18:43:50 - False - False
+2021-03-08 18:45:20 - False - False
+2021-03-08 18:46:50 - False - False
+2021-03-08 18:48:20 - False - False
+2021-03-08 18:49:50 - False - False
+2021-03-08 18:51:20 - False - False
+2021-03-08 18:52:50 - False - False
+2021-03-08 18:54:20 - False - False
+2021-03-08 18:55:50 - False - False
+2021-03-08 18:57:20 - False - False
+2021-03-08 18:58:50 - False - False
+2021-03-08 19:00:20 - False - False
+2021-03-08 19:01:50 - False - False
+2021-03-08 19:03:20 - False - False
+2021-03-08 19:04:50 - False - False
+2021-03-08 19:06:20 - False - False
+2021-03-08 19:07:50 - False - False
+2021-03-08 19:09:20 - False - False
+2021-03-08 19:10:50 - False - False
+2021-03-08 19:12:20 - False - False
+2021-03-08 19:13:50 - False - False
+2021-03-08 19:15:20 - False - False
+2021-03-08 19:16:50 - False - False
+2021-03-08 19:18:20 - False - False
+2021-03-08 19:19:50 - False - False
+2021-03-08 19:21:20 - False - False
+2021-03-08 19:22:50 - False - False
+2021-03-08 19:24:20 - False - False
+2021-03-08 19:25:50 - False - False
+2021-03-08 19:27:20 - False - False
+2021-03-08 19:28:50 - False - False
+2021-03-08 19:30:20 - False - False
+2021-03-08 19:31:50 - False - False
+2021-03-08 19:33:20 - False - False
+2021-03-08 19:34:50 - False - False
+2021-03-08 19:36:20 - False - False
+2021-03-08 19:37:50 - False - False
+2021-03-08 19:39:20 - False - False
+2021-03-08 19:40:50 - False - False
+2021-03-08 19:42:20 - False - False
+2021-03-08 19:43:50 - False - False
+2021-03-08 19:45:20 - False - False
+2021-03-08 19:46:50 - False - False
+2021-03-08 19:48:20 - False - False
+2021-03-08 19:49:50 - False - False
+2021-03-08 19:51:20 - False - False
+2021-03-08 19:52:50 - False - False
+2021-03-08 19:54:20 - False - False
+2021-03-08 19:55:50 - False - False
+2021-03-08 19:57:20 - False - False
+2021-03-08 19:58:50 - False - False
+2021-03-08 20:00:20 - False - False
+2021-03-08 20:01:50 - False - False
+2021-03-08 20:03:20 - False - False
+2021-03-08 20:04:50 - False - False
+2021-03-08 20:06:20 - False - False
+2021-03-08 20:07:50 - False - False
+2021-03-08 20:09:20 - False - False
+2021-03-08 20:10:50 - False - False
+2021-03-08 20:12:20 - False - False
+2021-03-08 20:13:50 - False - False
+2021-03-08 20:15:20 - False - False
+2021-03-08 20:16:50 - False - False
+2021-03-08 20:18:20 - False - False
+2021-03-08 20:19:50 - False - False
+2021-03-08 20:21:20 - False - False
+2021-03-08 20:22:50 - False - False
+2021-03-08 20:24:20 - False - False
+2021-03-08 20:25:50 - False - False
+2021-03-08 20:27:20 - False - False
+2021-03-08 20:28:50 - False - False
+2021-03-08 20:30:20 - False - False
+2021-03-08 20:31:50 - False - False
+2021-03-08 20:33:20 - False - False
+2021-03-08 20:34:50 - False - False
+2021-03-08 20:36:20 - False - False
+2021-03-08 20:37:50 - False - False
+2021-03-08 20:39:20 - False - False
+2021-03-08 20:40:50 - False - False
+2021-03-08 20:42:20 - False - False
+2021-03-08 20:43:50 - False - False
+2021-03-08 20:45:20 - False - False
+2021-03-08 20:46:50 - False - False
+2021-03-08 20:48:20 - False - False
+2021-03-08 20:49:50 - False - False
+2021-03-08 20:51:20 - False - False
+2021-03-08 20:52:50 - False - False
+2021-03-08 20:54:20 - False - False
+2021-03-08 20:55:50 - False - False
+2021-03-08 20:57:20 - False - False
+2021-03-08 20:58:50 - False - False
+2021-03-08 21:00:20 - False - False
+2021-03-08 21:01:50 - False - False
+2021-03-08 21:03:20 - False - False
+2021-03-08 21:04:50 - False - False
+2021-03-08 21:06:20 - False - False
+2021-03-08 21:07:50 - False - False
+2021-03-08 21:09:20 - False - False
+2021-03-08 21:10:50 - False - False
+2021-03-08 21:12:20 - False - False
+2021-03-08 21:13:50 - False - False
+2021-03-08 21:15:20 - False - False
+2021-03-08 21:16:50 - False - False
+2021-03-08 21:18:20 - False - False
+2021-03-08 21:19:50 - False - False
+2021-03-08 21:21:20 - False - False
+2021-03-08 21:22:50 - False - False
+2021-03-08 21:24:20 - False - False
+2021-03-08 21:25:50 - False - False
+2021-03-08 21:27:20 - False - False
+2021-03-08 21:28:50 - False - False
+2021-03-08 21:30:20 - False - False
+2021-03-08 21:31:50 - False - False
+2021-03-08 21:33:20 - False - False
+2021-03-08 21:34:50 - False - False
+2021-03-08 21:36:20 - False - False
+2021-03-08 21:37:50 - False - False
+2021-03-08 21:39:20 - False - False
+2021-03-08 21:40:50 - False - False
+2021-03-08 21:42:20 - False - False
+2021-03-08 21:43:50 - False - False
+2021-03-08 21:45:20 - False - False
+2021-03-08 21:46:50 - False - False
+2021-03-08 21:48:20 - False - False
+2021-03-08 21:49:50 - False - False
+2021-03-08 21:51:20 - False - False
+2021-03-08 21:52:50 - False - False
+2021-03-08 21:54:20 - False - False
+2021-03-08 21:55:50 - False - False
+2021-03-08 21:57:20 - False - False
+2021-03-08 21:58:50 - False - False
+2021-03-08 22:00:20 - False - False
+2021-03-08 22:01:50 - False - False
+2021-03-08 22:03:20 - False - False
+2021-03-08 22:04:50 - False - False
+2021-03-08 22:06:20 - False - False
+2021-03-08 22:07:50 - False - False
+2021-03-08 22:09:20 - False - False
+2021-03-08 22:10:50 - False - False
+2021-03-08 22:12:20 - False - False
+2021-03-08 22:13:50 - False - False
+2021-03-08 22:15:20 - False - False
+2021-03-08 22:16:50 - False - False
+2021-03-08 22:18:20 - False - False
+2021-03-08 22:19:50 - False - False
+2021-03-08 22:21:20 - False - False
+2021-03-08 22:22:50 - False - False
+2021-03-08 22:24:20 - False - False
+2021-03-08 22:25:50 - False - False
+2021-03-08 22:27:20 - False - False
+2021-03-08 22:28:50 - False - False
+2021-03-08 22:30:20 - False - False
+2021-03-08 22:31:50 - False - False
+2021-03-08 22:33:20 - False - False
+2021-03-08 22:34:50 - False - False
+2021-03-08 22:36:20 - False - False
+2021-03-08 22:37:50 - False - False
+2021-03-08 22:39:20 - False - False
+2021-03-08 22:40:50 - False - False
+2021-03-08 22:42:20 - False - False
+2021-03-08 22:43:50 - False - False
+2021-03-08 22:45:20 - False - False
+2021-03-08 22:46:50 - False - False
+2021-03-08 22:48:20 - False - False
+2021-03-08 22:49:50 - False - False
+2021-03-08 22:51:20 - False - False
+2021-03-08 22:52:50 - False - False
+2021-03-08 22:54:20 - False - False
+2021-03-08 22:55:50 - False - False
+2021-03-08 22:57:20 - False - False
+2021-03-08 22:58:50 - False - False
+2021-03-08 23:00:20 - False - False
+2021-03-08 23:01:50 - False - False
+2021-03-08 23:03:20 - False - False
+2021-03-08 23:04:50 - False - False
+2021-03-08 23:06:20 - False - False
+2021-03-08 23:07:50 - False - False
+2021-03-08 23:09:20 - False - False
+2021-03-08 23:10:50 - False - False
+2021-03-08 23:12:20 - False - False
+2021-03-08 23:13:50 - False - False
+2021-03-08 23:15:20 - False - False
+2021-03-08 23:16:50 - False - False
+2021-03-08 23:18:20 - False - False
+2021-03-08 23:19:50 - False - False
+2021-03-08 23:21:20 - False - False
+2021-03-08 23:22:50 - False - False
+2021-03-08 23:24:20 - False - False
+2021-03-08 23:25:50 - False - False
+2021-03-08 23:27:20 - False - False
+2021-03-08 23:28:50 - False - False
+2021-03-08 23:30:20 - False - False
+2021-03-08 23:31:50 - False - False
+2021-03-08 23:33:20 - False - False
+2021-03-08 23:34:50 - False - False
+2021-03-08 23:36:20 - False - False
+2021-03-08 23:37:50 - False - False
+2021-03-08 23:39:20 - False - False
+2021-03-08 23:40:50 - False - False
+2021-03-08 23:42:20 - False - False
+2021-03-08 23:43:50 - False - False
+2021-03-08 23:45:20 - False - False
+2021-03-08 23:46:50 - False - False
+2021-03-08 23:48:20 - False - False
+2021-03-08 23:49:50 - False - False
+2021-03-08 23:51:20 - False - False
+2021-03-08 23:52:50 - False - False
+2021-03-08 23:54:20 - False - False
+2021-03-08 23:55:50 - False - False
+2021-03-08 23:57:20 - False - False
+2021-03-08 23:58:50 - False - False
+2021-03-09 00:00:20 - False - False
+2021-03-09 00:01:50 - False - False
+2021-03-09 00:03:20 - False - False
+2021-03-09 00:04:50 - False - False
+2021-03-09 00:06:20 - False - False
+2021-03-09 00:07:50 - False - False
+2021-03-09 00:09:20 - False - False
+2021-03-09 00:10:50 - False - False
+2021-03-09 00:12:20 - False - False
+2021-03-09 00:13:50 - False - False
+2021-03-09 00:15:20 - False - False
+2021-03-09 00:16:50 - False - False
+2021-03-09 00:18:20 - False - False
+2021-03-09 00:19:50 - False - False
+2021-03-09 00:21:20 - False - False
+2021-03-09 00:22:50 - False - False
+2021-03-09 00:24:20 - False - False
+2021-03-09 00:25:50 - False - False
+2021-03-09 00:27:20 - False - False
+2021-03-09 00:28:50 - False - False
+2021-03-09 00:30:20 - False - False
+2021-03-09 00:31:50 - False - False
+2021-03-09 00:33:20 - False - False
+2021-03-09 00:34:50 - False - False
+2021-03-09 00:36:20 - False - False
+2021-03-09 00:37:50 - False - False
+2021-03-09 00:39:20 - False - False
+2021-03-09 00:40:50 - False - False
+2021-03-09 00:42:20 - False - False
+2021-03-09 00:43:50 - False - False
+2021-03-09 00:45:20 - False - False
+2021-03-09 00:46:50 - False - False
+2021-03-09 00:48:20 - False - False
+2021-03-09 00:49:50 - False - False
+2021-03-09 00:51:20 - False - False
+2021-03-09 00:52:50 - False - False
+2021-03-09 00:54:20 - False - False
+2021-03-09 00:55:50 - False - False
+2021-03-09 00:57:20 - False - False
+2021-03-09 00:58:50 - False - False
+2021-03-09 01:00:20 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-09 01:01:34 - False - False
+2021-03-09 01:04:04 - False - False
+2021-03-09 01:06:34 - False - False
+2021-03-09 01:09:04 - False - False
+2021-03-09 01:11:34 - False - False
+2021-03-09 01:14:04 - False - False
+2021-03-09 01:16:34 - False - False
+2021-03-09 01:19:04 - False - False
+2021-03-09 01:21:34 - False - False
+2021-03-09 01:24:04 - False - False
+2021-03-09 01:26:34 - False - False
+2021-03-09 01:29:04 - False - False
+2021-03-09 01:31:34 - False - False
+2021-03-09 01:34:04 - False - False
+2021-03-09 01:36:34 - False - False
+2021-03-09 01:39:04 - False - False
+2021-03-09 01:41:34 - False - False
+2021-03-09 01:44:04 - False - False
+2021-03-09 01:46:34 - False - False
+2021-03-09 01:49:04 - False - False
+2021-03-09 01:51:34 - False - False
+2021-03-09 01:54:04 - False - False
+2021-03-09 01:56:34 - False - False
+2021-03-09 01:59:04 - False - False
+2021-03-09 02:01:34 - False - False
+2021-03-09 02:04:04 - False - False
+2021-03-09 02:06:34 - False - False
+2021-03-09 02:09:04 - False - False
+2021-03-09 02:11:34 - False - False
+2021-03-09 02:14:04 - False - False
+2021-03-09 02:16:34 - False - False
+2021-03-09 02:19:04 - False - False
+2021-03-09 02:21:34 - False - False
+2021-03-09 02:24:04 - False - False
+2021-03-09 02:26:34 - False - False
+2021-03-09 02:29:04 - False - False
+2021-03-09 02:31:34 - False - False
+2021-03-09 02:34:04 - False - False
+2021-03-09 02:36:34 - False - False
+2021-03-09 02:39:04 - False - False
+2021-03-09 02:41:34 - False - False
+2021-03-09 02:44:04 - False - False
+2021-03-09 02:46:34 - False - False
+2021-03-09 02:49:04 - False - False
+2021-03-09 02:51:34 - False - False
+2021-03-09 02:54:04 - False - False
+2021-03-09 02:56:34 - False - False
+2021-03-09 02:59:04 - False - False
+2021-03-09 03:01:34 - False - False
+2021-03-09 03:04:04 - False - False
+2021-03-09 03:06:34 - False - False
+2021-03-09 03:09:04 - False - False
+2021-03-09 03:11:34 - False - False
+2021-03-09 03:14:04 - False - False
+2021-03-09 03:16:34 - False - False
+2021-03-09 03:19:04 - False - False
+2021-03-09 03:21:34 - False - False
+2021-03-09 03:24:04 - False - False
+2021-03-09 03:26:34 - False - False
+2021-03-09 03:29:04 - False - False
+2021-03-09 03:31:34 - False - False
+2021-03-09 03:34:04 - False - False
+2021-03-09 03:36:34 - False - False
+2021-03-09 03:39:04 - False - False
+2021-03-09 03:41:34 - False - False
+2021-03-09 03:44:04 - False - False
+2021-03-09 03:46:34 - False - False
+2021-03-09 03:49:04 - False - False
+2021-03-09 03:51:34 - False - False
+2021-03-09 03:54:04 - False - False
+2021-03-09 03:56:34 - False - False
+2021-03-09 03:59:04 - False - False
+2021-03-09 04:01:34 - False - False
+2021-03-09 04:04:04 - False - False
+2021-03-09 04:06:34 - False - False
+2021-03-09 04:09:04 - False - False
+2021-03-09 04:11:34 - False - False
+2021-03-09 04:14:04 - False - False
+2021-03-09 04:16:34 - False - False
+2021-03-09 04:19:04 - False - False
+2021-03-09 04:21:34 - False - False
+2021-03-09 04:24:04 - False - False
+2021-03-09 04:26:34 - False - False
+2021-03-09 04:29:04 - False - False
+2021-03-09 04:31:34 - False - False
+2021-03-09 04:34:04 - False - False
+2021-03-09 04:36:34 - False - False
+2021-03-09 04:39:04 - False - False
+2021-03-09 04:41:34 - False - False
+2021-03-09 04:44:04 - False - False
+2021-03-09 04:46:34 - False - False
+2021-03-09 04:49:04 - False - False
+2021-03-09 04:51:34 - False - False
+2021-03-09 04:54:04 - False - False
+2021-03-09 04:56:34 - False - False
+2021-03-09 04:59:04 - False - False
+2021-03-09 05:01:34 - False - False
+2021-03-09 05:04:04 - False - False
+2021-03-09 05:06:34 - False - False
+2021-03-09 05:09:04 - False - False
+2021-03-09 05:11:34 - False - False
+2021-03-09 05:14:04 - False - False
+2021-03-09 05:16:34 - False - False
+2021-03-09 05:19:04 - False - False
+2021-03-09 05:21:34 - False - False
+2021-03-09 05:24:04 - False - False
+2021-03-09 05:26:34 - False - False
+2021-03-09 05:29:04 - False - False
+2021-03-09 05:31:34 - False - False
+2021-03-09 05:34:04 - False - False
+2021-03-09 05:36:34 - False - False
+2021-03-09 05:39:04 - False - False
+2021-03-09 05:41:34 - False - False
+2021-03-09 05:44:04 - False - False
+2021-03-09 05:46:34 - False - False
+2021-03-09 05:49:04 - False - False
+2021-03-09 05:51:34 - False - False
+2021-03-09 05:54:04 - False - False
+2021-03-09 05:56:34 - False - False
+2021-03-09 05:59:04 - False - False
+2021-03-09 06:01:34 - False - False
+2021-03-09 06:04:04 - False - False
+2021-03-09 06:06:34 - False - False
+2021-03-09 06:09:04 - False - False
+2021-03-09 06:11:34 - False - False
+2021-03-09 06:14:04 - False - False
+2021-03-09 06:16:34 - False - False
+2021-03-09 06:19:04 - False - False
+2021-03-09 06:21:34 - False - False
+2021-03-09 06:24:04 - False - False
+2021-03-09 06:26:34 - False - False
+2021-03-09 06:29:04 - False - False
+2021-03-09 06:31:34 - False - False
+2021-03-09 06:34:04 - False - False
+2021-03-09 06:36:34 - False - False
+2021-03-09 06:39:04 - False - False
+2021-03-09 06:41:34 - False - False
+2021-03-09 06:44:04 - False - False
+2021-03-09 06:46:34 - False - False
+2021-03-09 06:49:04 - False - False
+2021-03-09 06:51:34 - False - False
+2021-03-09 06:54:04 - False - False
+2021-03-09 06:56:34 - False - False
+2021-03-09 06:59:04 - False - False
+2021-03-09 07:01:34 - False - False
+2021-03-09 07:04:04 - False - False
+2021-03-09 07:06:34 - False - False
+2021-03-09 07:09:04 - False - False
+2021-03-09 07:11:34 - False - False
+2021-03-09 07:14:04 - False - False
+2021-03-09 07:16:34 - False - False
+2021-03-09 07:19:04 - False - False
+2021-03-09 07:21:34 - False - False
+2021-03-09 07:24:04 - False - False
+2021-03-09 07:26:34 - False - False
+2021-03-09 07:29:04 - False - False
+2021-03-09 07:31:34 - False - False
+2021-03-09 07:34:04 - False - False
+2021-03-09 07:36:34 - False - False
+2021-03-09 07:39:04 - False - False
+2021-03-09 07:41:34 - False - False
+2021-03-09 07:44:04 - False - False
+2021-03-09 07:46:34 - False - False
+2021-03-09 07:49:04 - False - False
+2021-03-09 07:51:34 - False - False
+2021-03-09 07:54:04 - False - False
+2021-03-09 07:56:34 - False - False
+2021-03-09 07:59:04 - False - False
+2021-03-09 08:01:34 - False - False
+2021-03-09 08:04:04 - False - False
+2021-03-09 08:06:34 - False - False
+2021-03-09 08:09:04 - False - False
+2021-03-09 08:11:34 - False - False
+2021-03-09 08:14:04 - False - False
+2021-03-09 08:16:34 - False - False
+2021-03-09 08:19:04 - False - False
+2021-03-09 08:21:34 - False - False
+2021-03-09 08:24:04 - False - False
+2021-03-09 08:26:34 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-09 08:29:26 - False - False
+2021-03-09 08:31:26 - False - False
+2021-03-09 08:33:26 - False - False
+2021-03-09 08:35:26 - False - False
+2021-03-09 08:37:26 - False - False
+2021-03-09 08:39:26 - False - False
+2021-03-09 08:41:26 - False - False
+2021-03-09 08:43:26 - False - False
+2021-03-09 08:45:26 - False - False
+2021-03-09 08:47:26 - False - False
+2021-03-09 08:49:26 - False - False
+2021-03-09 08:51:26 - False - False
+2021-03-09 08:53:26 - False - False
+2021-03-09 08:55:26 - False - False
+2021-03-09 08:57:26 - False - False
+2021-03-09 08:59:26 - False - False
+2021-03-09 09:01:26 - False - False
+2021-03-09 09:03:26 - False - False
+2021-03-09 09:05:26 - False - False
+2021-03-09 09:07:26 - False - False
+2021-03-09 09:09:26 - False - False
+2021-03-09 09:11:26 - False - False
+2021-03-09 09:13:26 - False - False
+2021-03-09 09:15:26 - False - False
+2021-03-09 09:17:26 - False - False
+2021-03-09 09:19:26 - False - False
+2021-03-09 09:21:26 - False - False
+2021-03-09 09:23:26 - False - False
+2021-03-09 09:25:26 - False - False
+2021-03-09 09:27:26 - False - False
+2021-03-09 09:29:26 - False - False
+2021-03-09 09:31:26 - False - False
+2021-03-09 09:33:26 - False - False
+2021-03-09 09:35:26 - False - False
+2021-03-09 09:37:26 - False - False
+2021-03-09 09:39:26 - False - False
+2021-03-09 09:41:26 - False - False
+2021-03-09 09:43:26 - False - False
+2021-03-09 09:45:26 - False - False
+2021-03-09 09:47:26 - False - False
+2021-03-09 09:49:26 - False - False
+2021-03-09 09:51:26 - False - False
+2021-03-09 09:53:26 - False - False
+2021-03-09 09:55:26 - False - False
+2021-03-09 09:57:26 - False - False
+2021-03-09 09:59:26 - False - False
+2021-03-09 10:01:26 - False - False
+2021-03-09 10:03:26 - False - False
+2021-03-09 10:05:26 - False - False
+2021-03-09 10:07:26 - False - False
+2021-03-09 10:09:26 - False - False
+2021-03-09 10:11:26 - False - False
+2021-03-09 10:13:26 - False - False
+2021-03-09 10:15:26 - False - False
+2021-03-09 10:17:26 - False - False
+2021-03-09 10:19:26 - False - False
+2021-03-09 10:21:26 - False - False
+2021-03-09 10:23:26 - False - False
+2021-03-09 10:25:26 - False - False
+2021-03-09 10:27:26 - False - False
+2021-03-09 10:29:26 - False - False
+2021-03-09 10:31:26 - False - False
+2021-03-09 10:33:26 - False - False
+2021-03-09 10:35:26 - False - False
+2021-03-09 10:37:26 - False - False
+2021-03-09 10:39:26 - False - False
+2021-03-09 10:41:26 - False - False
+2021-03-09 10:43:26 - False - False
+2021-03-09 10:45:26 - False - False
+2021-03-09 10:47:26 - False - False
+2021-03-09 10:49:26 - False - False
+2021-03-09 10:51:26 - False - False
+2021-03-09 10:53:26 - False - False
+2021-03-09 10:55:26 - False - False
+2021-03-09 10:57:26 - False - False
+2021-03-09 10:59:26 - False - False
+2021-03-09 11:01:26 - False - False
+2021-03-09 11:03:26 - False - False
+2021-03-09 11:05:26 - False - False
+2021-03-09 11:07:26 - False - False
+2021-03-09 11:09:26 - False - False
+2021-03-09 11:11:26 - False - False
+2021-03-09 11:13:26 - False - False
+2021-03-09 11:15:26 - False - False
+2021-03-09 11:17:26 - True - False
+2021-03-09 11:19:26 - False - False
+2021-03-09 11:21:26 - False - False
+2021-03-09 11:23:26 - False - False
+2021-03-09 11:25:26 - False - False
+2021-03-09 11:27:26 - False - False
+2021-03-09 11:29:26 - False - False
+2021-03-09 11:31:26 - False - False
+2021-03-09 11:33:26 - False - False
+2021-03-09 11:35:26 - False - False
+2021-03-09 11:37:26 - False - False
+2021-03-09 11:39:26 - False - False
+2021-03-09 11:41:26 - False - False
+2021-03-09 11:43:26 - False - False
+2021-03-09 11:45:26 - False - False
+2021-03-09 11:47:26 - False - False
+2021-03-09 11:49:26 - False - False
+2021-03-09 11:51:26 - False - False
+2021-03-09 11:53:26 - False - False
+2021-03-09 11:55:26 - False - False
+2021-03-09 11:57:26 - False - False
+2021-03-09 11:59:26 - False - False
+2021-03-09 12:01:26 - False - False
+2021-03-09 12:03:26 - False - False
+2021-03-09 12:05:26 - False - False
+2021-03-09 12:07:26 - False - False
+2021-03-09 12:09:26 - False - False
+2021-03-09 12:11:26 - False - False
+2021-03-09 12:13:26 - False - False
+2021-03-09 12:15:26 - False - False
+2021-03-09 12:17:26 - False - False
+2021-03-09 12:19:26 - False - False
+2021-03-09 12:21:26 - False - False
+2021-03-09 12:23:26 - False - False
+2021-03-09 12:25:26 - False - False
+2021-03-09 12:27:26 - False - False
+2021-03-09 12:29:26 - False - False
+2021-03-09 12:31:26 - False - False
+2021-03-09 12:33:26 - False - False
+2021-03-09 12:35:26 - False - False
+2021-03-09 12:37:26 - False - False
+2021-03-09 12:39:26 - False - False
+2021-03-09 12:41:26 - False - False
+2021-03-09 12:43:26 - False - False
+2021-03-09 12:45:26 - False - False
+2021-03-09 12:47:26 - False - False
+2021-03-09 12:49:26 - False - False
+2021-03-09 12:51:26 - False - False
+2021-03-09 12:53:26 - False - False
+2021-03-09 12:55:26 - False - False
+2021-03-09 12:57:26 - False - False
+2021-03-09 12:59:26 - False - False
+2021-03-09 13:01:26 - False - False
+2021-03-09 13:03:26 - False - False
+2021-03-09 13:05:26 - False - False
+2021-03-09 13:07:26 - False - False
+2021-03-09 13:09:26 - False - False
+2021-03-09 13:11:26 - False - False
+2021-03-09 13:13:26 - False - False
+2021-03-09 13:15:26 - False - False
+2021-03-09 13:17:26 - False - False
+2021-03-09 13:19:26 - False - False
+2021-03-09 13:21:26 - False - False
+2021-03-09 13:23:26 - False - False
+2021-03-09 13:25:26 - False - False
+2021-03-09 13:27:26 - False - False
+2021-03-09 13:29:26 - False - False
+2021-03-09 13:31:26 - False - False
+2021-03-09 13:33:26 - False - False
+2021-03-09 13:35:26 - False - False
+2021-03-09 13:37:26 - False - False
+2021-03-09 13:39:26 - False - False
+2021-03-09 13:41:26 - False - False
+2021-03-09 13:43:26 - False - False
+2021-03-09 13:45:26 - False - False
+2021-03-09 13:47:26 - False - False
+2021-03-09 13:49:26 - False - False
+2021-03-09 13:51:26 - False - False
+2021-03-09 13:53:26 - False - False
+2021-03-09 13:55:26 - False - False
+2021-03-09 13:57:26 - False - False
+2021-03-09 13:59:26 - False - False
+2021-03-09 14:01:26 - False - False
+2021-03-09 14:03:26 - False - False
+2021-03-09 14:05:26 - False - False
+2021-03-09 14:07:26 - False - False
+2021-03-09 14:09:26 - False - False
+2021-03-09 14:11:26 - False - False
+2021-03-09 14:13:26 - False - False
+2021-03-09 14:15:26 - False - False
+2021-03-09 14:17:26 - False - False
+2021-03-09 14:19:26 - False - False
+2021-03-09 14:21:26 - False - False
+2021-03-09 14:23:26 - False - False
+2021-03-09 14:25:26 - False - False
+2021-03-09 14:27:26 - False - False
+2021-03-09 14:29:26 - False - False
+2021-03-09 14:31:26 - False - False
+2021-03-09 14:33:26 - False - False
+2021-03-09 14:35:26 - False - False
+2021-03-09 14:37:26 - False - False
+2021-03-09 14:39:26 - False - False
+2021-03-09 14:41:26 - False - False
+2021-03-09 14:43:26 - False - False
+2021-03-09 14:45:26 - False - False
+2021-03-09 14:47:26 - False - False
+2021-03-09 14:49:26 - False - False
+2021-03-09 14:51:26 - False - False
+2021-03-09 14:53:26 - False - False
+2021-03-09 14:55:26 - False - False
+2021-03-09 14:57:26 - False - False
+2021-03-09 14:59:26 - False - False
+2021-03-09 15:01:26 - False - False
+2021-03-09 15:03:26 - False - False
+2021-03-09 15:05:26 - False - False
+2021-03-09 15:07:26 - False - False
+2021-03-09 15:09:26 - False - False
+2021-03-09 15:11:26 - False - False
+2021-03-09 15:13:26 - False - False
+2021-03-09 15:15:26 - False - False
+Adding job tentatively -- it will be properly scheduled when the scheduler starts
+Added job "report_availability" to job store "default"
+Scheduler started
+Date/Time         - In Stock - Can Buy
+2021-03-09 15:18:56 - False - False
+2021-03-09 15:20:56 - False - False
+2021-03-09 15:22:56 - False - False
+2021-03-09 15:24:56 - False - False
+2021-03-09 15:26:56 - False - False
+2021-03-09 15:28:56 - False - False
+2021-03-09 15:30:56 - False - False
+2021-03-09 15:32:56 - False - False
+2021-03-09 15:34:56 - False - False
+2021-03-09 15:36:56 - False - False
+2021-03-09 15:38:56 - False - False
+2021-03-09 15:40:56 - False - False
+2021-03-09 15:42:56 - False - False
+2021-03-09 15:44:56 - False - False
+2021-03-09 15:46:56 - False - False
+2021-03-09 15:48:56 - False - False
+2021-03-09 15:50:56 - False - False
+2021-03-09 15:52:56 - False - False
+2021-03-09 15:54:56 - False - False
+2021-03-09 15:56:56 - False - False
+2021-03-09 15:58:56 - False - False
+2021-03-09 16:00:56 - False - False
+2021-03-09 16:02:56 - False - False
+2021-03-09 16:04:56 - False - False
+2021-03-09 16:06:56 - False - False
+2021-03-09 16:08:56 - False - False
+2021-03-09 16:10:56 - False - False
+2021-03-09 16:12:56 - False - False
+2021-03-09 16:14:56 - False - False
+2021-03-09 16:16:56 - False - False
+2021-03-09 16:18:56 - False - False
+2021-03-09 16:20:56 - False - False
+2021-03-09 16:22:56 - False - False
+2021-03-09 16:24:56 - False - False
+2021-03-09 16:26:56 - False - False
+2021-03-09 16:28:56 - False - False
+2021-03-09 16:30:56 - True - False
+2021-03-09 16:32:56 - False - False
+2021-03-09 16:34:56 - False - False
+2021-03-09 16:36:56 - False - False
+2021-03-09 16:38:56 - False - False
+2021-03-09 16:40:56 - False - False
+2021-03-09 16:42:56 - False - False
+2021-03-09 16:44:56 - False - False
+2021-03-09 16:46:56 - False - False
+2021-03-09 16:48:56 - False - False
+2021-03-09 16:50:56 - False - False
+2021-03-09 16:52:56 - False - False
+2021-03-09 16:54:56 - False - False
+2021-03-09 16:56:56 - False - False
+2021-03-09 16:58:56 - False - False
+2021-03-09 17:00:56 - False - False
+2021-03-09 17:02:56 - False - False
+2021-03-09 17:04:56 - False - False
+2021-03-09 17:06:56 - False - False
+2021-03-09 17:08:56 - False - False
+2021-03-09 17:10:56 - False - False
+2021-03-09 17:12:56 - False - False
+2021-03-09 17:14:56 - False - False
+2021-03-09 17:16:56 - False - False
+2021-03-09 17:18:56 - False - False
+2021-03-09 17:20:56 - False - False
+2021-03-09 17:22:56 - False - False
+2021-03-09 17:24:56 - False - False
+2021-03-09 17:26:56 - False - False
+2021-03-09 17:28:56 - False - False
+2021-03-09 17:30:56 - False - False
+2021-03-09 17:32:56 - False - False
+2021-03-09 17:34:56 - False - False
+2021-03-09 17:36:56 - False - False
+2021-03-09 17:38:56 - False - False
+2021-03-09 17:40:56 - False - False
+2021-03-09 17:42:56 - False - False
+2021-03-09 17:44:56 - False - False
+2021-03-09 17:46:56 - False - False
+2021-03-09 17:48:56 - False - False
+2021-03-09 17:50:56 - False - False
+2021-03-09 17:52:56 - False - False
+2021-03-09 17:54:56 - False - False
+2021-03-09 17:56:56 - False - False
+2021-03-09 17:58:56 - False - False
+2021-03-09 18:00:56 - False - False
+2021-03-09 18:02:56 - False - False
+2021-03-09 18:04:56 - False - False
+2021-03-09 18:06:56 - False - False
+2021-03-09 18:08:56 - False - False
+2021-03-09 18:10:56 - False - False
+2021-03-09 18:12:56 - False - False
+2021-03-09 18:14:56 - False - False
+2021-03-09 18:16:56 - False - False
+2021-03-09 18:18:56 - False - False
+2021-03-09 18:20:56 - False - False
+2021-03-09 18:22:56 - False - False
+2021-03-09 18:24:56 - False - False
+2021-03-09 18:26:56 - False - False
+2021-03-09 18:28:56 - False - False
+2021-03-09 18:30:56 - False - False
+2021-03-09 18:32:56 - False - False
+2021-03-09 18:34:56 - False - False
+2021-03-09 18:36:56 - False - False
+2021-03-09 18:38:56 - False - False
+2021-03-09 18:40:56 - False - False
+2021-03-09 18:42:56 - False - False
+2021-03-09 18:44:56 - False - False
+2021-03-09 18:46:56 - False - False
+2021-03-09 18:48:56 - False - False
+2021-03-09 18:50:56 - False - False
+2021-03-09 18:52:56 - False - False
+2021-03-09 18:54:56 - False - False
+2021-03-09 18:56:56 - False - False
+2021-03-09 18:58:56 - False - False
+2021-03-09 19:00:56 - False - False
+2021-03-09 19:02:56 - False - False
+2021-03-09 19:04:56 - False - False
+2021-03-09 19:06:56 - False - False
+2021-03-09 19:08:56 - False - False
+2021-03-09 19:10:56 - False - False
+2021-03-09 19:12:56 - False - False
+2021-03-09 19:14:56 - False - False
+2021-03-09 19:16:56 - False - False
+2021-03-09 19:18:56 - False - False
+2021-03-09 19:20:56 - False - False
+2021-03-09 19:22:56 - False - False
+2021-03-09 19:24:56 - False - False
+2021-03-09 19:26:56 - False - False
+2021-03-09 19:28:56 - False - False
+2021-03-09 19:30:56 - False - False
+2021-03-09 19:32:56 - False - False
+2021-03-09 19:34:56 - False - False
+2021-03-09 19:36:56 - False - False
+2021-03-09 19:38:56 - False - False
+2021-03-09 19:40:56 - False - False
+2021-03-09 19:42:56 - False - False
+2021-03-09 19:44:56 - False - False
+2021-03-09 19:46:56 - False - False
+2021-03-09 19:48:56 - False - False
+2021-03-09 19:50:56 - False - False
+2021-03-09 19:52:56 - False - False
+2021-03-09 19:54:56 - False - False
+2021-03-09 19:56:56 - False - False
+2021-03-09 19:58:56 - False - False
+2021-03-09 20:00:56 - False - False
+2021-03-09 20:02:56 - False - False
+2021-03-09 20:04:56 - False - False
+2021-03-09 20:06:56 - False - False
+2021-03-09 20:08:56 - False - False
+2021-03-09 20:10:56 - False - False
+2021-03-09 20:12:56 - False - False
+2021-03-09 20:14:56 - False - False
+2021-03-09 20:16:56 - False - False
+2021-03-09 20:18:56 - False - False
+2021-03-09 20:20:56 - False - False
+2021-03-09 20:22:56 - False - False
+2021-03-09 20:24:56 - False - False
+2021-03-09 20:26:56 - False - False
+2021-03-09 20:28:56 - False - False
+2021-03-09 20:30:56 - False - False
+2021-03-09 20:32:56 - False - False
+2021-03-09 20:34:56 - False - False
+2021-03-09 20:36:56 - False - False
+2021-03-09 20:38:56 - False - False
+2021-03-09 20:40:56 - False - False
+2021-03-09 20:42:56 - False - False
+2021-03-09 20:44:56 - False - False
+2021-03-09 20:46:56 - False - False
+2021-03-09 20:48:56 - False - False
+2021-03-09 20:50:56 - False - False
+2021-03-09 20:52:56 - False - False
+2021-03-09 20:54:56 - False - False
+2021-03-09 20:56:56 - False - False
+2021-03-09 20:58:56 - False - False
+2021-03-09 21:00:56 - False - False
+2021-03-09 21:02:56 - False - False
+2021-03-09 21:04:56 - False - False
+2021-03-09 21:06:56 - False - False
+2021-03-09 21:08:56 - False - False
+2021-03-09 21:10:56 - False - False
+2021-03-09 21:12:56 - False - False
+2021-03-09 21:14:56 - False - False
+2021-03-09 21:16:56 - False - False
+2021-03-09 21:18:56 - False - False
+2021-03-09 21:20:56 - False - False
+2021-03-09 21:22:56 - False - False
+2021-03-09 21:24:56 - False - False
+2021-03-09 21:26:56 - False - False
+2021-03-09 21:28:56 - False - False
+2021-03-09 21:30:56 - False - False
+2021-03-09 21:32:56 - False - False
+2021-03-09 21:34:56 - False - False
+2021-03-09 21:36:56 - False - False
+2021-03-09 21:38:56 - False - False
+2021-03-09 21:40:56 - False - False
+2021-03-09 21:42:56 - False - False
+2021-03-09 21:44:56 - False - False
+2021-03-09 21:46:56 - False - False
+2021-03-09 21:48:56 - False - False
+2021-03-09 21:50:56 - False - False
+2021-03-09 21:52:56 - False - False
+2021-03-09 21:54:56 - False - False
+2021-03-09 21:56:56 - False - False
+2021-03-09 21:58:56 - False - False
+2021-03-09 22:00:56 - False - False
+2021-03-09 22:02:56 - False - False
+2021-03-09 22:04:56 - False - False
+2021-03-09 22:06:56 - False - False
+2021-03-09 22:08:56 - False - False
+2021-03-09 22:10:56 - False - False
+2021-03-09 22:12:56 - False - False
+2021-03-09 22:14:56 - False - False
+2021-03-09 22:16:56 - False - False
+2021-03-09 22:18:56 - False - False
+2021-03-09 22:20:56 - False - False
+2021-03-09 22:22:56 - False - False
+2021-03-09 22:24:56 - False - False
+2021-03-09 22:26:56 - False - False
+2021-03-09 22:28:56 - False - False
+2021-03-09 22:30:56 - False - False
+2021-03-09 22:32:56 - False - False
+2021-03-09 22:34:56 - False - False
+2021-03-09 22:36:56 - False - False
+2021-03-09 22:38:56 - False - False
+2021-03-09 22:40:56 - False - False
+2021-03-09 22:42:56 - False - False
+2021-03-09 22:44:56 - False - False
+2021-03-09 22:46:56 - False - False
+2021-03-09 22:48:56 - False - False
+2021-03-09 22:50:56 - False - False
+2021-03-09 22:52:56 - False - False
+2021-03-09 22:54:56 - False - False
+2021-03-09 22:56:56 - False - False
+2021-03-09 22:58:56 - False - False
+2021-03-09 23:00:56 - False - False
+2021-03-09 23:02:56 - False - False
+2021-03-09 23:04:56 - False - False
+2021-03-09 23:06:56 - False - False
+2021-03-09 23:08:56 - False - False
+2021-03-09 23:10:56 - False - False
+2021-03-09 23:12:56 - False - False
+2021-03-09 23:14:56 - False - False
+2021-03-09 23:16:56 - False - False
+2021-03-09 23:18:56 - False - False
+2021-03-09 23:20:56 - False - False
+2021-03-09 23:22:56 - False - False
+2021-03-09 23:24:56 - False - False
+2021-03-09 23:26:56 - False - False
+2021-03-09 23:28:56 - False - False
+2021-03-09 23:30:56 - False - False
+2021-03-09 23:32:56 - False - False
+2021-03-09 23:34:56 - False - False
+2021-03-09 23:36:56 - False - False
+2021-03-09 23:38:56 - False - False
+2021-03-09 23:40:56 - False - False
+2021-03-09 23:42:56 - False - False
+2021-03-09 23:44:56 - False - False
+2021-03-09 23:46:56 - False - False
+2021-03-09 23:48:56 - False - False
+2021-03-09 23:50:56 - False - False
+2021-03-09 23:52:56 - False - False
+2021-03-09 23:54:56 - False - False
+2021-03-09 23:56:56 - False - False
+2021-03-09 23:58:56 - False - False
+2021-03-10 00:00:56 - False - False
+2021-03-10 00:02:56 - False - False
+2021-03-10 00:04:56 - False - False
+2021-03-10 00:06:56 - False - False
+2021-03-10 00:08:56 - False - False
+2021-03-10 00:10:56 - False - False
+2021-03-10 00:12:56 - False - False
+2021-03-10 00:14:56 - False - False
+2021-03-10 00:16:56 - False - False
+2021-03-10 00:18:56 - False - False
+2021-03-10 00:20:56 - False - False
+2021-03-10 00:22:56 - False - False
+2021-03-10 00:24:56 - False - False
+2021-03-10 00:26:56 - False - False
+2021-03-10 00:28:56 - False - False
+2021-03-10 00:30:56 - False - False
+2021-03-10 00:32:56 - False - False
+2021-03-10 00:34:56 - False - False
+2021-03-10 00:36:56 - False - False
+2021-03-10 00:38:56 - False - False
+2021-03-10 00:40:56 - False - False
+2021-03-10 00:42:56 - False - False
+2021-03-10 00:44:56 - False - False
+2021-03-10 00:46:56 - False - False
+2021-03-10 00:48:56 - False - False
+2021-03-10 00:50:56 - False - False
+2021-03-10 00:52:56 - False - False
+2021-03-10 00:54:56 - False - False
+2021-03-10 00:56:56 - False - False
+2021-03-10 00:58:56 - False - False
+2021-03-10 01:00:56 - False - False
+2021-03-10 01:02:56 - False - False
+2021-03-10 01:04:56 - False - False
+2021-03-10 01:06:56 - False - False
+2021-03-10 01:08:56 - False - False
+2021-03-10 01:10:56 - False - False
+2021-03-10 01:12:56 - False - False
+2021-03-10 01:14:56 - False - False
+2021-03-10 01:16:56 - False - False
+2021-03-10 01:18:56 - False - False
+2021-03-10 01:20:56 - False - False
+2021-03-10 01:22:56 - False - False
+2021-03-10 01:24:56 - False - False
+2021-03-10 01:26:56 - False - False
+2021-03-10 01:28:56 - False - False
+2021-03-10 01:30:56 - False - False
+2021-03-10 01:32:56 - False - False
+2021-03-10 01:34:56 - False - False
+2021-03-10 01:36:56 - False - False
+2021-03-10 01:38:56 - False - False
+2021-03-10 01:40:56 - False - False
+2021-03-10 01:42:56 - False - False
+2021-03-10 01:44:56 - False - False
+2021-03-10 01:46:56 - False - False
+2021-03-10 01:48:56 - False - False
+2021-03-10 01:50:56 - False - False
+2021-03-10 01:52:56 - False - False
+2021-03-10 01:54:56 - False - False
+2021-03-10 01:56:56 - False - False
+2021-03-10 01:58:56 - False - False
+2021-03-10 02:00:56 - False - False
+2021-03-10 02:02:56 - False - False
+2021-03-10 02:04:56 - False - False
+2021-03-10 02:06:56 - False - False
+2021-03-10 02:08:56 - False - False
+2021-03-10 02:10:56 - False - False
+2021-03-10 02:12:56 - False - False
+2021-03-10 02:14:56 - False - False
+2021-03-10 02:16:56 - False - False
+2021-03-10 02:18:56 - False - False
+2021-03-10 02:20:56 - False - False
+2021-03-10 02:22:56 - False - False
+2021-03-10 02:24:56 - False - False
+2021-03-10 02:26:56 - False - False
+2021-03-10 02:28:56 - False - False
+2021-03-10 02:30:56 - False - False
+2021-03-10 02:32:56 - False - False
+2021-03-10 02:34:56 - False - False
+2021-03-10 02:36:56 - False - False
+2021-03-10 02:38:56 - False - False
+2021-03-10 02:40:56 - False - False
+2021-03-10 02:42:56 - False - False
+2021-03-10 02:44:56 - False - False
+2021-03-10 02:46:56 - False - False
+2021-03-10 02:48:56 - False - False
+2021-03-10 02:50:56 - False - False
+2021-03-10 02:52:56 - False - False
+2021-03-10 02:54:56 - False - False
+2021-03-10 02:56:56 - False - False
+2021-03-10 02:58:56 - False - False
+2021-03-10 03:00:56 - False - False
+2021-03-10 03:02:56 - False - False
+2021-03-10 03:04:56 - False - False
+2021-03-10 03:06:56 - False - False
+2021-03-10 03:08:56 - False - False
+2021-03-10 03:10:56 - False - False
+2021-03-10 03:12:56 - False - False
+2021-03-10 03:14:56 - False - False
+2021-03-10 03:16:56 - False - False
+2021-03-10 03:18:56 - False - False
+2021-03-10 03:20:56 - False - False
+2021-03-10 03:22:56 - False - False
+2021-03-10 03:24:56 - False - False
+2021-03-10 03:26:56 - False - False
+2021-03-10 03:28:56 - False - False
+2021-03-10 03:30:56 - False - False
+2021-03-10 03:32:56 - False - False
+2021-03-10 03:34:56 - False - False
+2021-03-10 03:36:56 - False - False
+2021-03-10 03:38:56 - False - False
+2021-03-10 03:40:56 - False - False
+2021-03-10 03:42:56 - False - False
+2021-03-10 03:44:56 - False - False
+2021-03-10 03:46:56 - False - False
+2021-03-10 03:48:56 - False - False
+2021-03-10 03:50:56 - False - False
+2021-03-10 03:52:56 - False - False
+2021-03-10 03:54:56 - False - False
+2021-03-10 03:56:56 - False - False
+2021-03-10 03:58:56 - False - False
+2021-03-10 04:00:56 - False - False
+2021-03-10 04:02:56 - False - False
+2021-03-10 04:04:56 - False - False
+2021-03-10 04:06:56 - False - False
+2021-03-10 04:08:56 - False - False
+2021-03-10 04:10:56 - False - False
+2021-03-10 04:12:56 - False - False
+2021-03-10 04:14:56 - False - False
+2021-03-10 04:16:56 - False - False
+2021-03-10 04:18:56 - False - False
+2021-03-10 04:20:56 - False - False
+2021-03-10 04:22:56 - False - False
+2021-03-10 04:24:56 - False - False
+2021-03-10 04:26:56 - False - False
+2021-03-10 04:28:56 - False - False
+2021-03-10 04:30:56 - False - False
+2021-03-10 04:32:56 - False - False
+2021-03-10 04:34:56 - False - False
+2021-03-10 04:36:56 - False - False
+2021-03-10 04:38:56 - False - False
+2021-03-10 04:40:56 - False - False
+2021-03-10 04:42:56 - False - False
+2021-03-10 04:44:56 - False - False
+2021-03-10 04:46:56 - False - False
+2021-03-10 04:48:56 - False - False
+2021-03-10 04:50:56 - False - False
+2021-03-10 04:52:56 - False - False
+2021-03-10 04:54:56 - False - False
+2021-03-10 04:56:56 - False - False
+2021-03-10 04:58:56 - False - False
+2021-03-10 05:00:56 - False - False
+2021-03-10 05:02:56 - False - False
+2021-03-10 05:04:56 - False - False
+2021-03-10 05:06:56 - False - False
+2021-03-10 05:08:56 - False - False
+2021-03-10 05:10:56 - False - False
+2021-03-10 05:12:56 - False - False
+2021-03-10 05:14:56 - False - False
+2021-03-10 05:16:56 - False - False
+2021-03-10 05:18:56 - False - False
+2021-03-10 05:20:56 - False - False
+2021-03-10 05:22:56 - False - False
+2021-03-10 05:24:56 - False - False
+2021-03-10 05:26:56 - False - False
+2021-03-10 05:28:56 - False - False
+2021-03-10 05:30:56 - False - False
+2021-03-10 05:32:56 - False - False
+2021-03-10 05:34:56 - False - False
+2021-03-10 05:36:56 - False - False
+2021-03-10 05:38:56 - False - False
+2021-03-10 05:40:56 - False - False
+2021-03-10 05:42:56 - False - False
+2021-03-10 05:44:56 - False - False
+2021-03-10 05:46:56 - False - False
+2021-03-10 05:48:56 - False - False
+2021-03-10 05:50:56 - False - False
+2021-03-10 05:52:56 - False - False
+2021-03-10 05:54:56 - False - False
+2021-03-10 05:56:56 - False - False
+2021-03-10 05:58:56 - False - False
+2021-03-10 06:00:56 - False - False
+2021-03-10 06:02:56 - False - False
+2021-03-10 06:04:56 - False - False
+2021-03-10 06:06:56 - False - False
+2021-03-10 06:08:56 - False - False
+2021-03-10 06:10:56 - False - False
+2021-03-10 06:12:56 - False - False
+2021-03-10 06:14:56 - False - False
+2021-03-10 06:16:56 - False - False
+2021-03-10 06:18:56 - False - False
+2021-03-10 06:20:56 - False - False
+2021-03-10 06:22:56 - False - False
+2021-03-10 06:24:56 - False - False
+2021-03-10 06:26:56 - False - False
+2021-03-10 06:28:56 - False - False
+2021-03-10 06:30:56 - False - False
+2021-03-10 06:32:56 - False - False
+2021-03-10 06:34:56 - False - False
+2021-03-10 06:36:56 - False - False
+2021-03-10 06:38:56 - False - False
+2021-03-10 06:40:56 - False - False
+2021-03-10 06:42:56 - False - False
+2021-03-10 06:44:56 - False - False
+2021-03-10 06:46:56 - False - False
+2021-03-10 06:48:56 - False - False
+2021-03-10 06:50:56 - False - False
+2021-03-10 06:52:56 - False - False
+2021-03-10 06:54:56 - False - False
+2021-03-10 06:56:56 - False - False
+2021-03-10 06:58:56 - False - False
+2021-03-10 07:00:56 - False - False
+2021-03-10 07:02:56 - False - False
+2021-03-10 07:04:56 - False - False
+2021-03-10 07:06:56 - False - False
+2021-03-10 07:08:56 - False - False
+2021-03-10 07:10:56 - False - False
+2021-03-10 07:12:56 - False - False
+2021-03-10 07:14:56 - False - False
+2021-03-10 07:16:56 - False - False
+2021-03-10 07:18:56 - False - False
+2021-03-10 07:20:56 - False - False
+2021-03-10 07:22:56 - False - False
+2021-03-10 07:24:56 - False - False
+2021-03-10 07:26:56 - False - False
+2021-03-10 07:28:56 - False - False
+2021-03-10 07:30:56 - False - False
+2021-03-10 07:32:56 - False - False
+2021-03-10 07:34:56 - False - False
+2021-03-10 07:36:56 - False - False
+2021-03-10 07:38:56 - False - False
+2021-03-10 07:40:56 - False - False
+2021-03-10 07:42:56 - False - False
+2021-03-10 07:44:56 - False - False
+2021-03-10 07:46:56 - False - False
+2021-03-10 07:48:56 - False - False
+2021-03-10 07:50:56 - False - False
+2021-03-10 07:52:56 - False - False
+2021-03-10 07:54:56 - False - False
+2021-03-10 07:56:56 - False - False
+2021-03-10 07:58:56 - False - False
+2021-03-10 08:00:56 - False - False
+2021-03-10 08:02:56 - False - False
+2021-03-10 08:04:56 - False - False
+2021-03-10 08:06:56 - False - False
+2021-03-10 08:08:56 - False - False
+2021-03-10 08:10:56 - False - False
+2021-03-10 08:12:56 - False - False
+2021-03-10 08:14:56 - False - False
+2021-03-10 08:16:56 - False - False
+2021-03-10 08:18:56 - False - False
+2021-03-10 08:20:56 - False - False
+2021-03-10 08:22:56 - False - False
+2021-03-10 08:24:56 - False - False
+2021-03-10 08:26:56 - False - False
+2021-03-10 08:28:56 - False - False
+2021-03-10 08:30:56 - False - False
+2021-03-10 08:32:56 - False - False
+2021-03-10 08:34:56 - False - False
+2021-03-10 08:36:56 - False - False
+2021-03-10 08:38:56 - False - False
+2021-03-10 08:40:56 - False - False
+2021-03-10 08:42:56 - False - False
+2021-03-10 08:44:56 - False - False
+2021-03-10 08:46:56 - False - False
+2021-03-10 08:48:56 - False - False
+2021-03-10 08:50:56 - False - False
+2021-03-10 08:52:56 - False - False
+2021-03-10 08:54:56 - False - False
+2021-03-10 08:56:56 - False - False
+2021-03-10 08:58:56 - False - False
+2021-03-10 09:00:56 - False - False
+2021-03-10 09:02:56 - False - False
+2021-03-10 09:04:56 - False - False
+2021-03-10 09:06:56 - False - False
+2021-03-10 09:08:56 - False - False
+2021-03-10 09:10:56 - False - False
+2021-03-10 09:12:56 - False - False
+2021-03-10 09:14:56 - False - False
+2021-03-10 09:16:56 - False - False
+2021-03-10 09:18:56 - False - False
+2021-03-10 09:20:56 - False - False
+2021-03-10 09:22:56 - False - False
+2021-03-10 09:24:56 - False - False
+2021-03-10 09:26:56 - False - False
+2021-03-10 09:28:56 - False - False
+2021-03-10 09:30:56 - False - False
+2021-03-10 09:32:56 - False - False
+2021-03-10 09:34:56 - False - False
+2021-03-10 09:36:56 - False - False
+2021-03-10 09:38:56 - False - False
+2021-03-10 09:40:56 - False - False
+2021-03-10 09:42:56 - False - False
+2021-03-10 09:44:56 - False - False
+2021-03-10 09:46:56 - False - False
+2021-03-10 09:48:56 - False - False
+2021-03-10 09:50:56 - False - False
+2021-03-10 09:52:56 - False - False
+2021-03-10 09:54:56 - False - False
+2021-03-10 09:56:56 - False - False
+2021-03-10 09:58:56 - False - False
+2021-03-10 10:00:56 - False - False
+2021-03-10 10:02:56 - False - False
+2021-03-10 10:04:56 - False - False
+2021-03-10 10:06:56 - False - False
+2021-03-10 10:08:56 - False - False
+2021-03-10 10:10:56 - False - False
+2021-03-10 10:12:56 - False - False
+2021-03-10 10:14:56 - False - False
+2021-03-10 10:16:56 - False - False
+2021-03-10 10:18:56 - False - False
+2021-03-10 10:20:56 - False - False
+2021-03-10 10:22:56 - False - False
+2021-03-10 10:24:56 - False - False
+2021-03-10 10:26:56 - False - False
+2021-03-10 10:28:56 - False - False
+2021-03-10 10:30:56 - False - False
+2021-03-10 10:32:56 - False - False
+2021-03-10 10:34:56 - False - False
+2021-03-10 10:36:56 - False - False
+2021-03-10 10:38:56 - False - False
+2021-03-10 10:40:56 - False - False
+2021-03-10 10:42:56 - True - False
+2021-03-10 10:44:56 - True - False
+2021-03-10 10:46:56 - False - False
+2021-03-10 10:48:56 - False - False
+2021-03-10 10:50:56 - False - False
+2021-03-10 10:52:56 - False - False
+2021-03-10 10:54:56 - False - False
+2021-03-10 10:56:56 - False - False
+2021-03-10 10:58:56 - False - False
+2021-03-10 11:00:56 - False - False
+2021-03-10 11:02:56 - False - False
+2021-03-10 11:04:56 - False - False
+2021-03-10 11:06:56 - False - False
+2021-03-10 11:08:56 - False - False
+2021-03-10 11:10:56 - False - False
+2021-03-10 11:12:56 - False - False
+2021-03-10 11:14:56 - False - False
+2021-03-10 11:16:56 - False - False
+2021-03-10 11:18:56 - False - False
+2021-03-10 11:20:56 - False - False
+2021-03-10 11:22:56 - False - False
+2021-03-10 11:24:56 - False - False
+2021-03-10 11:26:56 - False - False
+2021-03-10 11:28:56 - False - False
+2021-03-10 11:30:56 - False - False
+2021-03-10 11:32:56 - False - False
+2021-03-10 11:34:56 - False - False
+2021-03-10 11:36:56 - False - False
+2021-03-10 11:38:56 - False - False
+2021-03-10 11:40:56 - False - False
+2021-03-10 11:42:56 - False - False
+2021-03-10 11:44:56 - False - False
+2021-03-10 11:46:56 - False - False
+2021-03-10 11:48:56 - False - False
+2021-03-10 11:50:56 - False - False
+2021-03-10 11:52:56 - False - False
+2021-03-10 11:54:56 - False - False
+2021-03-10 11:56:56 - False - False
+2021-03-10 11:58:56 - False - False
+2021-03-10 12:00:56 - False - False
+2021-03-10 12:02:56 - False - False
+2021-03-10 12:04:56 - False - False
+2021-03-10 12:06:56 - False - False
+2021-03-10 12:08:56 - False - False
+2021-03-10 12:10:56 - False - False
+2021-03-10 12:12:56 - False - False
+2021-03-10 12:14:56 - False - False
+2021-03-10 12:16:56 - False - False
+2021-03-10 12:18:56 - False - False
+2021-03-10 12:20:56 - False - False
+2021-03-10 12:22:56 - False - False
+2021-03-10 12:24:56 - False - False
+2021-03-10 12:26:56 - False - False
+2021-03-10 12:28:56 - False - False
+2021-03-10 12:30:56 - False - False
+2021-03-10 12:32:56 - False - False
+2021-03-10 12:34:56 - False - False
+2021-03-10 12:36:56 - False - False
+2021-03-10 12:38:56 - False - False
+2021-03-10 12:40:56 - False - False
+2021-03-10 12:42:56 - False - False
+2021-03-10 12:44:56 - False - False
+2021-03-10 12:46:56 - False - False
+2021-03-10 12:48:56 - False - False
+2021-03-10 12:50:56 - False - False
+2021-03-10 12:52:56 - False - False
+2021-03-10 12:54:56 - False - False
+2021-03-10 12:56:56 - False - False
+2021-03-10 12:58:56 - False - False
+2021-03-10 13:00:56 - False - False
+2021-03-10 13:02:56 - False - False
+2021-03-10 13:04:56 - False - False
+2021-03-10 13:06:56 - False - False
+2021-03-10 13:08:56 - False - False
+2021-03-10 13:10:56 - False - False
+2021-03-10 13:12:56 - False - False
+2021-03-10 13:14:56 - False - False
+2021-03-10 13:16:56 - False - False
+2021-03-10 13:18:56 - False - False
+2021-03-10 13:20:56 - False - False
+2021-03-10 13:22:56 - False - False
+2021-03-10 13:24:56 - False - False
+2021-03-10 13:26:56 - False - False
+2021-03-10 13:28:56 - False - False
+2021-03-10 13:30:56 - False - False
+2021-03-10 13:32:56 - False - False
+2021-03-10 13:34:56 - False - False
+2021-03-10 13:36:56 - False - False
+2021-03-10 13:38:56 - False - False
+2021-03-10 13:40:56 - False - False
+2021-03-10 13:42:56 - False - False
