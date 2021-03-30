@@ -1,4 +1,5 @@
 import datetime
+from apscheduler.events import EVENT_JOB_ERROR
 from selenium import webdriver
 from bs4 import BeautifulSoup
 from pathlib import Path
@@ -17,9 +18,8 @@ in_stock = False
 available_to_buy = False
 last_time_rec = datetime.datetime.now().replace(microsecond=0)
 
-# refresh_time_minutes = 2
-refresh_time_seconds = 120 #90 #50 #45
-message_update_interval = 3 #12 #15 #20
+# refresh_time_seconds = 120 #90 #50 #45
+# message_update_interval = 3 #12 #15 #20
 # third_party_stock_interval = 10
 first_run = False
 k = 0
@@ -44,6 +44,7 @@ chromedriver_file_path = (curr_dir / "./driver/chromedriver").resolve()
 driver = webdriver.Chrome(chromedriver_file_path)
 
 scheduler = BackgroundScheduler(daemon=True)
+exceptions_caught = 0
 
 logging_enabled = False
 logging.basicConfig(filename='ps5checklog.log', filemode='a', format='%(message)s', level=logging.INFO) #encoding='utf-8',
@@ -57,28 +58,30 @@ server.bind((SERVER, PORT))
 
 
 def start_scheduler():
-    scheduler.add_job(report_availability, 'interval', seconds=(refresh_time_seconds))
-    # scheduler.start()
+    schedule_jobs(scheduler)
+    # scheduler.add_job(report_availability, 'interval', seconds=(refresh_time_seconds))
+    #
+    # four_secs = datetime.datetime.now() + datetime.timedelta(seconds=4)
+    # for job in scheduler.get_jobs():
+    #     job.modify(next_run_time=four_secs)
 
-    four_secs = datetime.datetime.now() + datetime.timedelta(seconds=4)
-    for job in scheduler.get_jobs():
-        job.modify(next_run_time=four_secs)
-
+    scheduler.add_listener(catch_scheduler_exception, EVENT_JOB_ERROR)
     scheduler.start()
     logging.info(f"Date/Time         - In Stock - Can Buy")
 
 
-def start_local_server():
-    print(f"Starting server on port {PORT}")
-    server.listen()
-    print(f"Server is listening on {SERVER}")
-    while True:
-        conn, addr = server.accept()
-        curr_time = datetime.datetime.now().replace(microsecond=0)
+#TODO: catch and print the exception
+def catch_scheduler_exception(event):
+    global exceptions_caught
+    exceptions_caught += 1
 
-        print(f"- Accepted new connection at: {curr_time}")
-        print(f"- Active connections: {threading.activeCount() - 1}")
-        conn.close()
+    thread = threading.Thread(target=send_exception_message_to_fcm)
+    thread.start()
+
+    if exceptions_caught > 5:
+        thread = threading.Thread(target=send_end_scheduler_message_to_fcm)
+        thread.start()
+        shutdown_stock_chkr()
         
 
 def parse_lowest_price(price_list):
@@ -159,29 +162,9 @@ def report_availability(url=amzn_ps5_url):
         thread = threading.Thread(target=send_mid_priority_message_to_fcm, args=(lowest_price, True,))
         thread.start()
 
-    k += 1
-    if k >= message_update_interval:
-        k = 0
-
-    # if in_stock or available_to_buy:
-    #     if available_to_buy:
-    #         thread = threading.Thread(target=send_high_priority_message_to_fcm)
-    #         thread.start()
-    #
-    #     elif not before_time("08:00:00"):
-    #         if third_int == 0:
-    #             thread = threading.Thread(target=send_mid_priority_message_to_fcm())
-    #             thread.start()
-    #         third_int += 1
-    #         if third_int >= third_party_stock_interval:
-    #             third_int = 0
-    #
-    #     else:
-    #         if third_int > 0:
-    #             third_int = 0
-    #
-    # elif third_int > 0:
-    #     third_int = 0
+    # k += 1
+    # if k >= message_update_interval:
+    #     k = 0
 
 
 def get_last_availability():
@@ -271,6 +254,54 @@ def send_high_priority_message_to_fcm(price=None, due_to_price=False):
     print(response.json(), end="\n\n")
 
 
+def send_exception_message_to_fcm():
+    formatted_time = last_time_rec.strftime(time_format)
+
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'key=' + serverToken,
+    }
+
+    body = {
+        'notification': {'title': 'Caught an Exception',
+                         'body': f"Check at {formatted_time} returned an exception.",
+                         'android_channel_id': low_alert_chann,
+                         'click_action': 'https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG/',
+                         },
+        'collapse_key': 'collapse',
+        'priority': 'normal',
+        'to':
+            mobile_device_token,
+    }
+    response = requests.post("https://fcm.googleapis.com/fcm/send", headers=headers, data=json.dumps(body))
+    print(response.status_code)
+    print(response.json(), end="\n\n")
+
+
+def send_end_scheduler_message_to_fcm():
+    formatted_time = last_time_rec.strftime(time_format)
+
+    headers = {
+        'Content-Type': 'application/json',
+        'Authorization': 'key=' + serverToken,
+    }
+
+    body = {
+        'notification': {'title': 'Stopping Stock Checker',
+                         'body': f"Stopping at {formatted_time} due to exceptions.",
+                         'android_channel_id': mid_alert_chann,
+                         'click_action': 'https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG/',
+                         },
+        'collapse_key': 'collapse',
+        'priority': 'normal',
+        'to':
+            mobile_device_token,
+    }
+    response = requests.post("https://fcm.googleapis.com/fcm/send", headers=headers, data=json.dumps(body))
+    print(response.status_code)
+    print(response.json(), end="\n\n")
+
+
 def before_time(hour_min_sec="08:00:00"):
     now = datetime.datetime.now()
 
@@ -279,6 +310,64 @@ def before_time(hour_min_sec="08:00:00"):
                                     second=my_datetime.time().second, microsecond=0)
 
     return now < my_datetime
+
+
+def schedule_jobs(scheduler):
+    jobs = [
+        # id   hr  min sec jitter
+        ('00', '*', 0, 10, 40),
+        ('01', '*', 1, 10, 15),
+        ('02', '*', 2, 10, 15),
+        ('03', '*', 3, 10, 25),
+        ('04', '*', 4, 10, 25),
+        ('06', '*', 6, 10, 55),
+        ('08', '*', 8, 10, 45),
+        ('10', '*', 10, 10, 30),
+        ('15', '*', 15, 10, 45),
+        ('21', '*', 21, 10, 60),
+        ('26', '*', 26, 10, 60),
+        ('30', '*', 30, 10, 30),
+        ('37', '*', 37, 10, 45),
+        ('45', '*', 45, 10, 60),
+        ('53', '*', 53, 10, 60),
+    ]
+
+    for i, hr, m, s, j in jobs:
+        scheduler.add_job(report_availability, 'cron', id=i, hour=hr, minute=m, second=s, jitter=j)
+
+    scheduler.add_job(pause_jobs, 'cron', id='000', hour=22, minute=18, second=0)
+    scheduler.add_job(resume_jobs, 'cron', id='001', hour=6, minute=58, second=55)
+
+
+job_ids_pausable = ('02', '04', '08', '10', '21', '26', '37', '45', '53')
+
+
+def pause_jobs():
+    for job in job_ids_pausable:
+        scheduler.pause_job(job)
+
+def resume_jobs():
+    for job in job_ids_pausable:
+        scheduler.resume_job(job)
+
+
+def shutdown_stock_chkr():
+    scheduler.shutdown()
+    server.shutdown(socket.SHUT_RDWR)
+    server.close()
+
+
+def start_local_server():
+    print(f"Starting server on port {PORT}")
+    server.listen()
+    print(f"Server is listening on {SERVER}")
+    while True:
+        conn, addr = server.accept()
+        curr_time = datetime.datetime.now().replace(microsecond=0)
+
+        print(f"- Accepted new connection at: {curr_time}")
+        print(f"- Active connections: {threading.activeCount() - 1}")
+        conn.close()
 
 
 if __name__ == "__main__":
