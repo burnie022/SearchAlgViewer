@@ -65,6 +65,8 @@ def start_scheduler():
     # for job in scheduler.get_jobs():
     #     job.modify(next_run_time=four_secs)
 
+    # A single job to run now
+    scheduler.add_job(report_availability)
     scheduler.add_listener(catch_scheduler_exception, EVENT_JOB_ERROR)
     scheduler.start()
     logging.info(f"Date/Time         - In Stock - Can Buy")
@@ -313,32 +315,48 @@ def before_time(hour_min_sec="08:00:00"):
 
 
 def schedule_jobs(scheduler):
+    # jobs = [
+    #     # id   hr  min sec jitter
+    #     ('00', '*', 0, 10, 40),
+    #     ('01', '*', 1, 10, 15),
+    #     ('02', '*', 2, 10, 15),
+    #     ('03', '*', 3, 10, 25),
+    #     ('04', '*', 4, 10, 25),
+    #     ('06', '*', 6, 10, 55),
+    #     ('08', '*', 8, 10, 45),
+    #     ('10', '*', 10, 10, 30),
+    #     ('15', '*', 15, 10, 45),
+    #     ('21', '*', 21, 10, 60),
+    #     ('26', '*', 26, 10, 60),
+    #     ('30', '*', 30, 10, 30),
+    #     ('37', '*', 37, 10, 45),
+    #     ('45', '*', 45, 10, 60),
+    #     ('53', '*', 53, 10, 60),
+    # ]
+
+    # Hopefully these checks won't get CAPTCHA
     jobs = [
         # id   hr  min sec jitter
-        ('00', '*', 0, 10, 40),
-        ('01', '*', 1, 10, 15),
-        ('02', '*', 2, 10, 15),
-        ('03', '*', 3, 10, 25),
-        ('04', '*', 4, 10, 25),
-        ('06', '*', 6, 10, 55),
-        ('08', '*', 8, 10, 45),
-        ('10', '*', 10, 10, 30),
-        ('15', '*', 15, 10, 45),
-        ('21', '*', 21, 10, 60),
-        ('26', '*', 26, 10, 60),
-        ('30', '*', 30, 10, 30),
-        ('37', '*', 37, 10, 45),
-        ('45', '*', 45, 10, 60),
-        ('53', '*', 53, 10, 60),
+        ('00',  0, 1, 10, 180),
+        ('01',  1, 1, 10, 120),
+        ('03',  3, 1, 10, 120),
+        ('06',  6, 1, 10, 120),
+        ('07',  7, 1, 15, 90),
+        ('08',  8, 1, 10, 180),
+        ('09',  9, 0, 10, 90),
+        ('12', 12, 0, 10, 180),
+        ('13', 13, 0, 10, 180),
+        ('13', 13, 0, 10, 180)
     ]
 
     for i, hr, m, s, j in jobs:
         scheduler.add_job(report_availability, 'cron', id=i, hour=hr, minute=m, second=s, jitter=j)
 
-    scheduler.add_job(pause_jobs, 'cron', id='000', hour=22, minute=18, second=0)
-    scheduler.add_job(resume_jobs, 'cron', id='001', hour=6, minute=58, second=55)
+    # scheduler.add_job(pause_jobs, 'cron', id='000', hour=22, minute=18, second=0)
+    # scheduler.add_job(resume_jobs, 'cron', id='001', hour=6, minute=58, second=55)
 
 
+# job_ids_pausable = ('02', '04', '08', '10', '21', '26', '37', '45', '53')
 job_ids_pausable = ('02', '04', '08', '10', '21', '26', '37', '45', '53')
 
 
