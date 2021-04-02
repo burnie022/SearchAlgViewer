@@ -5,13 +5,15 @@ from bs4 import BeautifulSoup
 from pathlib import Path
 import logging
 # from flask import Flask
-from apscheduler.schedulers.background import BackgroundScheduler
-import socket
+# from apscheduler.schedulers.background import BackgroundScheduler
+from apscheduler.schedulers.blocking import BlockingScheduler
+# import socket
 import threading
 import time
 import requests
 import json
 import random
+from os import name as os_name
 
 
 in_stock = False
@@ -39,11 +41,22 @@ amzn_ps5_url = "https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG"
 test_url = "https://www.amazon.com/Nintendo-Switch-Steering-Controller-TalkWorks-Accessories/dp/B07R679BGS/"
 # Test_url is to test application behavior when an item is in stock
 
-curr_dir = Path(__file__).parent
-chromedriver_file_path = (curr_dir / "./driver/chromedriver").resolve()
-driver = webdriver.Chrome(chromedriver_file_path)
+def get_webdriver():
+    if os_name == "nt":
+        return (curr_dir / "./driver/chromedriver_win32/chromedriver").resolve()
+    return (curr_dir / "./driver/chromedriver").resolve()
 
-scheduler = BackgroundScheduler(daemon=True)
+
+curr_dir = Path(__file__).parent
+# chromedriver_file_path = (curr_dir / "./driver/chromedriver").resolve()
+chromedriver_file_path = get_webdriver()
+driver = webdriver.Chrome(chromedriver_file_path)
+if os_name == "nt":
+    options = webdriver.ChromeOptions()
+    options.add_experimental_option('excludeSwitches', ['enable-logging'])
+
+# scheduler = BackgroundScheduler(daemon=True)
+scheduler = BlockingScheduler()
 exceptions_caught = 0
 
 logging_enabled = False
@@ -51,10 +64,10 @@ logging.basicConfig(filename='ps5checklog.log', filemode='a', format='%(message)
 logging.getLogger('apscheduler.executors.default').setLevel(logging.ERROR)
 # logging.getLogger('apscheduler.executors.default').propagate = False
 
-PORT = 5049
-SERVER = "192.168.29.106"
-server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server.bind((SERVER, PORT))
+# PORT = 5049
+# SERVER = "192.168.29.106"
+# server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+# server.bind((SERVER, PORT))
 
 
 def start_scheduler():
@@ -257,7 +270,8 @@ def send_high_priority_message_to_fcm(price=None, due_to_price=False):
 
 
 def send_exception_message_to_fcm():
-    formatted_time = last_time_rec.strftime(time_format)
+    now = datetime.datetime.now().replace(microsecond=0)
+    formatted_time = now.strftime(time_format)
 
     headers = {
         'Content-Type': 'application/json',
@@ -346,7 +360,7 @@ def schedule_jobs(scheduler):
         ('09',  9, 0, 10, 90),
         ('12', 12, 0, 10, 180),
         ('13', 13, 0, 10, 180),
-        ('13', 13, 0, 10, 180)
+        ('14', 14, 0, 10, 180)
     ]
 
     for i, hr, m, s, j in jobs:
@@ -371,30 +385,24 @@ def resume_jobs():
 
 def shutdown_stock_chkr():
     scheduler.shutdown()
-    server.shutdown(socket.SHUT_RDWR)
-    server.close()
+    # server.shutdown(socket.SHUT_RDWR)
+    # server.close()
 
 
-def start_local_server():
-    print(f"Starting server on port {PORT}")
-    server.listen()
-    print(f"Server is listening on {SERVER}")
-    while True:
-        conn, addr = server.accept()
-        curr_time = datetime.datetime.now().replace(microsecond=0)
-
-        print(f"- Accepted new connection at: {curr_time}")
-        print(f"- Active connections: {threading.activeCount() - 1}")
-        conn.close()
+# def start_local_server():
+#     print(f"Starting server on port {PORT}")
+#     server.listen()
+#     print(f"Server is listening on {SERVER}")
+#     while True:
+#         conn, addr = server.accept()
+#         curr_time = datetime.datetime.now().replace(microsecond=0)
+#
+#         print(f"- Accepted new connection at: {curr_time}")
+#         print(f"- Active connections: {threading.activeCount() - 1}")
+#         conn.close()
 
 
 if __name__ == "__main__":
     start_scheduler()
-    start_local_server()
+    # start_local_server()
 
-
-# i = 0
-# while True: # and i < 2:
-#     # time.sleep(10)
-#     # print(i)
-#     i += 1
