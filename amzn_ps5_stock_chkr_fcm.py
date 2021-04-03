@@ -14,6 +14,7 @@ import requests
 import json
 import random
 from os import name as os_name
+import keys
 
 
 in_stock = False
@@ -28,10 +29,9 @@ k = 0
 # third_int = 0
 time_format = '%I:%M:%S %p'
 
-serverToken = 'Your API key'
-deviceToken = 'Your device token'
-mobile_device_token = 'Your device token'
-
+serverToken = keys.firebase_api_key
+deviceToken = keys.virtual_device_token
+mobile_device_token = keys.mobile_device_token
 
 low_alert_chann = 'persist'
 mid_alert_chann = "msgs"
