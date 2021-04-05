@@ -4,15 +4,10 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 from pathlib import Path
 import logging
-# from flask import Flask
-# from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.schedulers.blocking import BlockingScheduler
-# import socket
 import threading
-import time
 import requests
 import json
-import random
 from os import name as os_name
 import keys
 
@@ -21,12 +16,8 @@ in_stock = False
 available_to_buy = False
 last_time_rec = datetime.datetime.now().replace(microsecond=0)
 
-# refresh_time_seconds = 120 #90 #50 #45
-# message_update_interval = 3 #12 #15 #20
-# third_party_stock_interval = 10
 first_run = False
 k = 0
-# third_int = 0
 time_format = '%I:%M:%S %p'
 
 serverToken = keys.firebase_api_key
@@ -41,6 +32,7 @@ amzn_ps5_url = "https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG"
 test_url = "https://www.amazon.com/Nintendo-Switch-Steering-Controller-TalkWorks-Accessories/dp/B07R679BGS/"
 # Test_url is to test application behavior when an item is in stock
 
+
 def get_webdriver():
     if os_name == "nt":
         return (curr_dir / "./driver/chromedriver_win32/chromedriver").resolve()
@@ -48,38 +40,26 @@ def get_webdriver():
 
 
 curr_dir = Path(__file__).parent
-# chromedriver_file_path = (curr_dir / "./driver/chromedriver").resolve()
 chromedriver_file_path = get_webdriver()
 driver = webdriver.Chrome(chromedriver_file_path)
 if os_name == "nt":
     options = webdriver.ChromeOptions()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
 
-# scheduler = BackgroundScheduler(daemon=True)
 scheduler = BlockingScheduler()
 exceptions_caught = 0
 
 logging_enabled = False
 logging.basicConfig(filename='ps5checklog.log', filemode='a', format='%(message)s', level=logging.INFO) #encoding='utf-8',
 logging.getLogger('apscheduler.executors.default').setLevel(logging.ERROR)
-# logging.getLogger('apscheduler.executors.default').propagate = False
-
-# PORT = 5049
-# SERVER = "192.168.29.106"
-# server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-# server.bind((SERVER, PORT))
 
 
 def start_scheduler():
     schedule_jobs(scheduler)
-    # scheduler.add_job(report_availability, 'interval', seconds=(refresh_time_seconds))
-    #
-    # four_secs = datetime.datetime.now() + datetime.timedelta(seconds=4)
-    # for job in scheduler.get_jobs():
-    #     job.modify(next_run_time=four_secs)
 
     # A single job to run now
     scheduler.add_job(report_availability)
+
     scheduler.add_listener(catch_scheduler_exception, EVENT_JOB_ERROR)
     scheduler.start()
     logging.info(f"Date/Time         - In Stock - Can Buy")
@@ -104,7 +84,6 @@ def parse_lowest_price(price_list):
         print("No price results")
         return None
     price = price_list[0].text
-    # print(f"Lowest price: {price}")
     if price.startswith("$"):
         try:
             price = float(price[1:])
@@ -137,7 +116,6 @@ def check_availability(url=amzn_ps5_url):
 
 
 def report_availability(url=amzn_ps5_url):
-    time.sleep(random.randint(0, 15))
     availability = check_availability(url)
 
     add_to_cart_exists = len(availability[3]) > 0
@@ -191,7 +169,7 @@ def get_last_availability():
 def send_low_priority_message_to_fcm(price=None):
     price_message = f" - Lowest price: ${price}" if price is not None else ""
     formatted_time = last_time_rec.strftime(time_format)
-    heading = 'Stock Update.'
+    heading = 'Tablet: Stock Update.'
 
     headers = {
         'Content-Type': 'application/json',
@@ -203,7 +181,7 @@ def send_low_priority_message_to_fcm(price=None):
                          'body': f"{str(formatted_time)}{price_message} - Can Buy: {available_to_buy}",
                          'android_channel_id': low_alert_chann,
                          'click_action': 'https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG/',
-                         'tag': 'collapse',
+                         'tag': 'tablet',
                          },
         'collapse_key': 'collapse',
         'priority': 'normal',
@@ -219,7 +197,7 @@ def send_low_priority_message_to_fcm(price=None):
 
 def send_mid_priority_message_to_fcm(price=None, due_to_price=False):
     price_message = f" - Lowest price: ${price}" if price is not None else ""
-    heading = 'Lower Priced PS5 available' if due_to_price else 'PS5 AVAILABLE NOW!!!! BUT BUY BUY!!!'
+    heading = 'Tablet: Lower Priced PS5 available' if due_to_price else 'Tablet: PS5 AVAILABLE NOW!!!! BUY BUY!!!'
     formatted_time = last_time_rec.strftime(time_format)
 
     headers = {
@@ -236,7 +214,6 @@ def send_mid_priority_message_to_fcm(price=None, due_to_price=False):
         'priority': 'high',
         'to':
             mobile_device_token,
-        #   'data': dataPayLoad,
     }
     response = requests.post("https://fcm.googleapis.com/fcm/send", headers=headers, data=json.dumps(body))
     print(response.status_code)
@@ -245,7 +222,7 @@ def send_mid_priority_message_to_fcm(price=None, due_to_price=False):
 
 def send_high_priority_message_to_fcm(price=None, due_to_price=False):
     price_message = f" - Lowest price: ${price}" if price is not None else ""
-    heading = 'Lower Priced PS5 available' if due_to_price else 'PS5 AVAILABLE NOW!!!! BUT BUY BUY!!!'
+    heading = 'Tablet: Lower Priced PS5 available' if due_to_price else 'Tablet: PS5 AVAILABLE NOW!!!! BUY BUY!!!'
     formatted_time = last_time_rec.strftime(time_format)
 
     headers = {
@@ -262,7 +239,6 @@ def send_high_priority_message_to_fcm(price=None, due_to_price=False):
         'priority': 'high',
         'to':
             mobile_device_token,
-        #   'data': dataPayLoad,
     }
     response = requests.post("https://fcm.googleapis.com/fcm/send", headers=headers, data=json.dumps(body))
     print(response.status_code)
@@ -279,7 +255,7 @@ def send_exception_message_to_fcm():
     }
 
     body = {
-        'notification': {'title': 'Caught an Exception',
+        'notification': {'title': 'Tablet: Caught an Exception',
                          'body': f"Check at {formatted_time} returned an exception.",
                          'android_channel_id': low_alert_chann,
                          'click_action': 'https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG/',
@@ -295,7 +271,8 @@ def send_exception_message_to_fcm():
 
 
 def send_end_scheduler_message_to_fcm():
-    formatted_time = last_time_rec.strftime(time_format)
+    now = datetime.datetime.now().replace(microsecond=0)
+    formatted_time = now.strftime(time_format)
 
     headers = {
         'Content-Type': 'application/json',
@@ -303,7 +280,7 @@ def send_end_scheduler_message_to_fcm():
     }
 
     body = {
-        'notification': {'title': 'Stopping Stock Checker',
+        'notification': {'title': 'Tablet: Stopping Stock Checker',
                          'body': f"Stopping at {formatted_time} due to exceptions.",
                          'android_channel_id': mid_alert_chann,
                          'click_action': 'https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG/',
@@ -329,37 +306,17 @@ def before_time(hour_min_sec="08:00:00"):
 
 
 def schedule_jobs(scheduler):
-    # jobs = [
-    #     # id   hr  min sec jitter
-    #     ('00', '*', 0, 10, 40),
-    #     ('01', '*', 1, 10, 15),
-    #     ('02', '*', 2, 10, 15),
-    #     ('03', '*', 3, 10, 25),
-    #     ('04', '*', 4, 10, 25),
-    #     ('06', '*', 6, 10, 55),
-    #     ('08', '*', 8, 10, 45),
-    #     ('10', '*', 10, 10, 30),
-    #     ('15', '*', 15, 10, 45),
-    #     ('21', '*', 21, 10, 60),
-    #     ('26', '*', 26, 10, 60),
-    #     ('30', '*', 30, 10, 30),
-    #     ('37', '*', 37, 10, 45),
-    #     ('45', '*', 45, 10, 60),
-    #     ('53', '*', 53, 10, 60),
-    # ]
-
     # Hopefully these checks won't get CAPTCHA
     jobs = [
         # id   hr  min sec jitter
         ('00',  0, 1, 10, 180),
-        ('01',  1, 1, 10, 120),
+        ('02',  2, 1, 10, 90),
         ('03',  3, 1, 10, 120),
         ('06',  6, 1, 10, 120),
         ('07',  7, 1, 15, 90),
-        ('08',  8, 1, 10, 180),
+        ('08',  8, 1, 10, 120),
         ('09',  9, 0, 10, 90),
         ('12', 12, 0, 10, 180),
-        ('13', 13, 0, 10, 180),
         ('14', 14, 0, 10, 180)
     ]
 
@@ -370,10 +327,7 @@ def schedule_jobs(scheduler):
     # scheduler.add_job(resume_jobs, 'cron', id='001', hour=6, minute=58, second=55)
 
 
-# job_ids_pausable = ('02', '04', '08', '10', '21', '26', '37', '45', '53')
 job_ids_pausable = ('02', '04', '08', '10', '21', '26', '37', '45', '53')
-
-
 def pause_jobs():
     for job in job_ids_pausable:
         scheduler.pause_job(job)
@@ -385,24 +339,8 @@ def resume_jobs():
 
 def shutdown_stock_chkr():
     scheduler.shutdown()
-    # server.shutdown(socket.SHUT_RDWR)
-    # server.close()
-
-
-# def start_local_server():
-#     print(f"Starting server on port {PORT}")
-#     server.listen()
-#     print(f"Server is listening on {SERVER}")
-#     while True:
-#         conn, addr = server.accept()
-#         curr_time = datetime.datetime.now().replace(microsecond=0)
-#
-#         print(f"- Accepted new connection at: {curr_time}")
-#         print(f"- Active connections: {threading.activeCount() - 1}")
-#         conn.close()
 
 
 if __name__ == "__main__":
     start_scheduler()
-    # start_local_server()
 
