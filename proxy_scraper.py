@@ -1,6 +1,6 @@
 from typing import List
 import requests
-from lxml.html import fromstring
+from bs4 import BeautifulSoup
 import time
 import proxyscrape
 import random
@@ -38,18 +38,28 @@ class ProxyScraper:
         new_proxies = self._filter_proxies(self._fetch_primary_proxies())
         for p in new_proxies:
             self.proxy_stack.append(f"{p[0]}:{p[1]}")
-        random.shuffle(self.proxy_stack)
+        # random.shuffle(self.proxy_stack)
 
         # Backup proxies from proxyscrape using proxyscrape API
         proxies = set(self.collector.get_proxies())
         self.proxy_stack_reserves.clear()
         for proxy in proxies:
             self.proxy_stack_reserves.append(f"{proxy.host}:{proxy.port}")
-        random.shuffle(self.proxy_stack_reserves)
+        # random.shuffle(self.proxy_stack_reserves)
 
 
-    def get_proxy_stack(self):
-        return self.proxy_stack, self.proxy_stack_reserves, self.stack_code
+    def get_proxy_stack(self, current_primary_stack=None, bad_proxy_set=None):
+        if current_primary_stack is None:
+            return self.proxy_stack, self.proxy_stack_reserves, self.stack_code
+        else:
+            # Assume we have both current_primary_stack and bad_proxy_set
+            new_stack = []
+            proxy_set = set(self.proxy_stack)
+            proxy_set.difference_update(current_primary_stack)
+            proxy_set.difference_update(bad_proxy_set)
+            new_stack.extend(current_primary_stack)
+            new_stack.extend(proxy_set)
+            return new_stack, self.proxy_stack_reserves, self.stack_code
 
 
     def blacklist_proxies(self, bad_proxies:List):
@@ -61,21 +71,24 @@ class ProxyScraper:
     # Fetch proxies from 'https://free-proxy-list.net/'
     def _fetch_primary_proxies(self):
         url = 'https://free-proxy-list.net/'
-        response = requests.get(url)
-        parser = fromstring(response.text)
-
-        proxy_results = []
-        for i in parser.xpath('//tbody/tr'):
-            if i.xpath('.//td[7][contains(text(),"yes")]'):
-                # Grabbing IP and corresponding PORT
-                # proxy = ":".join([i.xpath('.//td[1]/text()')[0], i.xpath('.//td[2]/text()')[0]])
-                # proxies.add(proxy)
-                proxy = (i.xpath('.//td[1]/text()')[0], i.xpath('.//td[2]/text()')[0], i.xpath('.//td[3]/text()')[0],
-                         i.xpath('.//td[4]/text()')[0], i.xpath('.//td[5]/text()')[0], i.xpath('.//td[6]/text()')[0],
-                         i.xpath('.//td[7]/text()')[0])
-                # proxies.add(proxy)
-                proxy_results.append(proxy)
-        return proxy_results  # proxies
+        try:
+            response = requests.get(url)
+            proxy_results = []
+            soup = BeautifulSoup(response.text, 'html.parser')
+            proxy_table = soup.find('table', {'id': "proxylisttable"})
+            proxy_table_body = proxy_table.find('tbody')
+            proxy_table_rows = proxy_table_body.find_all('tr')
+            for row in proxy_table_rows:
+                new_row = []
+                for cell in row:
+                    if cell.string in ("no", "yes"):
+                        break
+                    new_row.append(cell.string)
+                proxy_results.append(new_row)
+            return proxy_results
+        except:
+            print("Exception while fetching primary proxies")
+            return []
 
     def _filter_proxies(self, proxies, code='US', anonymity='elite proxy'):
         filtered_proxies = []

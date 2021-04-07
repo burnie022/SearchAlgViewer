@@ -95,6 +95,7 @@ def report_availability(url=amzn_ps5_url):
 
 def _report_availability_thread(url=amzn_ps5_url):
     start_time = datetime.datetime.now().replace(microsecond=0)
+    print(f"-- New job: {start_time.strftime(time_format)}")
     result = _rotate_proxies_and_check_results(url)
 
     if result is None:
@@ -150,26 +151,28 @@ def _report_availability_thread(url=amzn_ps5_url):
 
 
 def update_proxy_stack():
-    proxy_stack.clear()
-    proxy_stack_secondary.clear()
+    # proxy_stack.clear()
     global last_stack_code
+    global proxy_stack_secondary
+    global proxy_stack
+    proxy_stack_secondary.clear()
     proxy_collector.refresh_proxies()
     time.sleep(4)
 
-    stack_primary, stack_secondary, last_stack_code = proxy_collector.get_proxy_stack()
-    proxy_stack.extend(stack_primary)
-    proxy_stack_secondary.extend(stack_secondary)
-
+    proxy_stack, proxy_stack_secondary, last_stack_code = proxy_collector.get_proxy_stack(proxy_stack, bad_proxies)
+    # proxy_stack.extend(stack_primary)
+    # proxy_stack_secondary.extend(stack_secondary)
 
 def _rotate_proxies_and_check_results(url=amzn_ps5_url):
     if len(proxy_stack) == 0:
         update_proxy_stack()
-
+    i = 0
     while proxy_stack:
         proxy = proxy_stack.pop()
-        print(f"Trying proxy: {proxy}")
         if proxy in bad_proxies:
             continue
+        print(f"Trying proxy: {proxy}")
+        i += 1
         is_bad, result = _scrape_amazon(proxy, url)
         if is_bad or result is None:
             bad_proxies.add(proxy)
@@ -192,14 +195,21 @@ def _rotate_proxies_and_check_results(url=amzn_ps5_url):
         proxy_stack_secondary.append(proxy)
         return result
 
+    if i == 0:
+        print("!!!!!! THERE WERE NO GOOD PROXIES FOR THE REQUEST !!!!!!!")
     return None
 
-
+#TODO: Limit concurrent threads (maybe by storing ids)
+#TODO: Store these in a firebase database. Have them fetched at start, and at interval,
+# and stored on firebase at interval as well
+#TODO: Print thread start and end notifications, maybe add some color
 def _scrape_amazon(proxy, url=amzn_ps5_url):
     try:
-        response = requests.get(url, headers=headers, proxies={'http': ('http://' + proxy), 'https': ('https://' + proxy)}) #{"http://": proxy, "https://": proxy})
+        response = requests.get(url, headers=headers,
+                                proxies={'http': ('http://' + proxy), 'https': ('https://' + proxy)},
+                                timeout=(15.05, 18.05))
         if "To discuss automated access to Amazon data please contact" in response.text:
-            print("----- Page was blocked by Amazon. Use better proxies -----")
+            print("-----    Page was blocked by Amazon      -----")
             return _bad_request()
         elif response.status_code > 500:
             print("Page %s must have been blocked by Amazon as the status code was %d" % (url, response.status_code))
@@ -209,13 +219,16 @@ def _scrape_amazon(proxy, url=amzn_ps5_url):
             product_title_div = soup.find('div', {"id": "titleSection"})
             product_title = product_title_div.find_all('span', {"id": "productTitle"})
             if len(product_title) == 0:
+                print("!!  PS5 wasn't in the response  !!")
                 return _bad_request()
 
             return False, _parse_ps5_soup_object(soup)
 
     except Exception as e:
-        # print(e)
-        print("!!! Skipping. Some Exception while retrieving with proxy or when parsing !!!!")
+        if e == requests.exceptions.RequestException:
+            print("!!! Proxy request timed out. Skipping.")
+        else:
+            print("!!! Skipping. Some Exception while retrieving with proxy or when parsing !!!!")
         return _bad_request()
 
 
@@ -422,12 +435,12 @@ def schedule_jobs(scheduler):
     jobs = [
         # id   hr  min sec jitter
         ('00', '*', 0, 10, 0),
-        ('01', '*', 1, 10, 0),
-        ('02', '*', 2, 10, 0),
-        ('03', '*', 3, 10, 0),
+        # ('01', '*', 1, 10, 0),
+        ('02', '*', 2, 20, 0),
+        # ('03', '*', 3, 10, 0),
         ('03b', '*', 3, 50, 0),
         ('05', '*', 5, 35, 0),
-        ('06', '*', 6, 45, 0),
+        # ('06', '*', 6, 45, 0),
         ('08', '*', 8, 30, 0),
         ('10', '*', 10, 30, 0),
         ('12', '*', 12, 30, 0),
@@ -436,7 +449,7 @@ def schedule_jobs(scheduler):
         ('21', '*', 21, 10, 0),
         ('26', '*', 26, 0, 0),
         ('30', '*', 30, 15, 0),
-        ('31', '*', 31, 30, 0),
+        ('32', '*', 32, 30, 0),
         ('35', '*', 35, 30, 0),
         ('38', '*', 38, 30, 0),
         ('45', '*', 45, 10, 0),
@@ -463,8 +476,9 @@ def schedule_jobs(scheduler):
     for i, hr, m, s, j in update_proxy_jobs:
         scheduler.add_job(schedule_proxy_update_jobs, 'cron', id=i, hour=hr, minute=m, second=s, jitter=j)
 
-    scheduler.add_job(pause_jobs, 'cron', id='000', hour=22, minute=17, second=0)
-    scheduler.add_job(resume_jobs, 'cron', id='001', hour=6, minute=58, second=55)
+    # scheduler.add_job(pause_jobs, 'cron', id='000', hour=22, minute=17, second=0)
+    # scheduler.add_job(resume_jobs, 'cron', id='001', hour=6, minute=58, second=55)
+    scheduler.add_job(pause_jobs)
 
 
 def schedule_proxy_update_jobs():
@@ -472,7 +486,7 @@ def schedule_proxy_update_jobs():
     thread.start()
 
 
-pausable_jobs = ('02', '03', '06', '10', '12', '18', '26', '31', '35', '49','55')
+pausable_jobs = ('02', '03b', '10', '12', '18', '26', '32', '38', '49', '55')
 def pause_jobs():
     for job in pausable_jobs:
         scheduler.pause_job(job)
