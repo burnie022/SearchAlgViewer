@@ -9,6 +9,8 @@ import requests
 import json
 from proxy_scraper import ProxyScraper, headers
 import keys
+import firebase_admin
+from firebase_admin import db
 
 in_stock = False
 available_to_buy = False
@@ -40,6 +42,11 @@ logging.basicConfig(filename='ps5checklog.log', filemode='a', format='%(message)
                     level=logging.INFO)  # encoding='utf-8',
 logging.getLogger('apscheduler.executors.default').setLevel(logging.ERROR)
 
+cred_obj = firebase_admin.credentials.Certificate('ps5-stock-chkr-firebase-adminsdk-jtkid-a127daf4e8.json')
+firebase = firebase_admin.initialize_app(cred_obj, {
+	'databaseURL': 'https://ps5-stock-chkr-default-rtdb.firebaseio.com/'
+	})
+
 ####### Proxy variables ###############
 proxy_collector = ProxyScraper()
 proxy_stack = []
@@ -47,6 +54,8 @@ proxy_stack_secondary = []
 last_stack_code = 0
 
 bad_proxies = set()
+# tuples of form (ip, site)
+last_used_proxy = []
 
 
 def start_scheduler():
@@ -95,16 +104,17 @@ def report_availability(url=amzn_ps5_url):
 
 def _report_availability_thread(url=amzn_ps5_url):
     start_time = datetime.datetime.now().replace(microsecond=0)
-    print(f"-- New job: {start_time.strftime(time_format)}")
+    print(f"New job: {start_time.strftime(time_format)}")
     result = _rotate_proxies_and_check_results(url)
 
     if result is None:
+        print(f"  -- CURRENT TIME: {datetime.datetime.now().replace(microsecond=0).strftime(time_format)} !!!!")
+        print(f"  !! ALL ATTEMPTS EXHAUSTED; JOB FAILED - BEGAN AT: {start_time.strftime(time_format)}!!", end="\n\n")
         send_proxy_fail_message_to_fcm(start_time)
-        print(f"\n!!!! CURRENT TIME: {datetime.datetime.now().replace(microsecond=0).strftime(time_format)} !!!!")
-        print(f"!!!! FAILED ALL ATTEMPTS TO CONNECT TO AMAZON OR PARSE INFORMATION -- ATTEMPTED AT: {start_time.strftime(time_format)}!!!!", end="\n\n")
+        now = datetime.datetime.now().replace(microsecond=0)
+        results = ('', '', '', '', start_time, now.strftime(time_format), '', '')
+        write_to_firebase(results)
         return
-
-    # Check availability: return 2 objects - soup object or None, and boolean that says true if bad proxy
 
     in_stock_r, available_to_buy_r, curr_time, add_button_input, buy_button_input, lowest_price = result
 
@@ -133,10 +143,10 @@ def _report_availability_thread(url=amzn_ps5_url):
 
     logging.info(f"{str(curr_time)} - {in_stock_r} - {available_to_buy_r}")
 
-    global k
-    if k == 0:
-        thread = threading.Thread(target=send_low_priority_message_to_fcm, args=(lowest_price,))
-        thread.start()
+    # global k
+    # if k == 0:
+    thread = threading.Thread(target=send_low_priority_message_to_fcm, args=(lowest_price,))
+    thread.start()
 
     if available_to_buy or add_to_cart_exists or buy_now_exists:
         thread = threading.Thread(target=send_high_priority_message_to_fcm, args=(lowest_price, False,))
@@ -145,13 +155,17 @@ def _report_availability_thread(url=amzn_ps5_url):
         thread = threading.Thread(target=send_mid_priority_message_to_fcm, args=(lowest_price, True,))
         thread.start()
 
+    proxy, site = last_used_proxy.pop() if last_used_proxy else ('', '')
+    results = (curr_time, str(in_stock_r), str(available_to_buy_r), lowest_price if lowest_price else '',
+               start_time, '', proxy, site)
+    write_to_firebase(results)
+
     # k += 1
     # if k >= message_update_interval:
     #     k = 0
 
 
 def update_proxy_stack():
-    # proxy_stack.clear()
     global last_stack_code
     global proxy_stack_secondary
     global proxy_stack
@@ -160,8 +174,7 @@ def update_proxy_stack():
     time.sleep(4)
 
     proxy_stack, proxy_stack_secondary, last_stack_code = proxy_collector.get_proxy_stack(proxy_stack, bad_proxies)
-    # proxy_stack.extend(stack_primary)
-    # proxy_stack_secondary.extend(stack_secondary)
+
 
 def _rotate_proxies_and_check_results(url=amzn_ps5_url):
     if len(proxy_stack) == 0:
@@ -171,7 +184,7 @@ def _rotate_proxies_and_check_results(url=amzn_ps5_url):
         proxy = proxy_stack.pop()
         if proxy in bad_proxies:
             continue
-        print(f"Trying proxy: {proxy}")
+        print(f"  -Trying proxy: {proxy}")
         i += 1
         is_bad, result = _scrape_amazon(proxy, url)
         if is_bad or result is None:
@@ -179,27 +192,29 @@ def _rotate_proxies_and_check_results(url=amzn_ps5_url):
             continue
 
         proxy_stack.append(proxy)
+        last_used_proxy.append((proxy, 'free-proxy-list'))
         return result
 
-    print("\nTRYING SECONDARY PROXIES")
+    print("\n  -TRYING SECONDARY PROXIES")
     while proxy_stack_secondary:
         proxy = proxy_stack_secondary.pop()
-        print(f"Trying proxy: {proxy}")
         if proxy in bad_proxies:
             continue
+        print(f"  -Trying proxy: {proxy}")
         is_bad, result = _scrape_amazon(proxy, url)
         if is_bad or result is None:
             bad_proxies.add(proxy)
             continue
 
         proxy_stack_secondary.append(proxy)
+        last_used_proxy.append((proxy, 'proxyscrape'))
         return result
 
     if i == 0:
-        print("!!!!!! THERE WERE NO GOOD PROXIES FOR THE REQUEST !!!!!!!")
+        print("  -- THERE WERE NO GOOD PROXIES FOR THE REQUEST.")
     return None
 
-#TODO: Limit concurrent threads (maybe by storing ids)
+#TODO: See if i can add more free proxy sites
 #TODO: Store these in a firebase database. Have them fetched at start, and at interval,
 # and stored on firebase at interval as well
 #TODO: Print thread start and end notifications, maybe add some color
@@ -209,7 +224,7 @@ def _scrape_amazon(proxy, url=amzn_ps5_url):
                                 proxies={'http': ('http://' + proxy), 'https': ('https://' + proxy)},
                                 timeout=(15.05, 18.05))
         if "To discuss automated access to Amazon data please contact" in response.text:
-            print("-----    Page was blocked by Amazon      -----")
+            print("  ---   Page was blocked by Amazon    ---")
             return _bad_request()
         elif response.status_code > 500:
             print("Page %s must have been blocked by Amazon as the status code was %d" % (url, response.status_code))
@@ -219,16 +234,16 @@ def _scrape_amazon(proxy, url=amzn_ps5_url):
             product_title_div = soup.find('div', {"id": "titleSection"})
             product_title = product_title_div.find_all('span', {"id": "productTitle"})
             if len(product_title) == 0:
-                print("!!  PS5 wasn't in the response  !!")
+                print("  !!  PS5 wasn't in the response  !!")
                 return _bad_request()
 
             return False, _parse_ps5_soup_object(soup)
 
     except Exception as e:
         if e == requests.exceptions.RequestException:
-            print("!!! Proxy request timed out. Skipping.")
+            print("    !! Proxy request timed out. Skipping.")
         else:
-            print("!!! Skipping. Some Exception while retrieving with proxy or when parsing !!!!")
+            print("    !! Skipping. Some Exception !!")
         return _bad_request()
 
 
@@ -428,9 +443,9 @@ def before_time(hour_min_sec="08:00:00"):
 
 
 def schedule_jobs(scheduler):
-    # # scheduler.add_job(schedule_proxy_update_jobs, 'interval', seconds=60)
-    # scheduler.add_job(report_availability, 'interval', seconds=90)
-    # return
+    # scheduler.add_job(schedule_proxy_update_jobs, 'interval', seconds=60)
+    scheduler.add_job(report_availability) #, 'interval', seconds=120)
+    return
 
     jobs = [
         # id   hr  min sec jitter
@@ -479,6 +494,8 @@ def schedule_jobs(scheduler):
     # scheduler.add_job(pause_jobs, 'cron', id='000', hour=22, minute=17, second=0)
     # scheduler.add_job(resume_jobs, 'cron', id='001', hour=6, minute=58, second=55)
     scheduler.add_job(pause_jobs)
+    scheduler.add_job(clear_bad_proxies, 'cron', hour='*', minute=14, second=45)
+    scheduler.add_job(clear_bad_proxies, 'cron', hour='*', minute=51, second=45)
 
 
 def schedule_proxy_update_jobs():
@@ -494,6 +511,31 @@ def pause_jobs():
 def resume_jobs():
     for job in pausable_jobs:
         scheduler.resume_job(job)
+
+
+def clear_bad_proxies():
+    bad_proxies.clear()
+
+
+def write_to_firebase(results):
+    ref = db.reference("/")
+    ref.set({
+        "Stock_Results_Proxy": -1
+    })
+
+    contents = {
+        "Time_checked": str(results[0]),
+        "Available": results[1],
+        "Can_Buy_From_Amazon": results[2],
+        "Lowest_Available_Price": str(results[3]),
+        "Job_Start_Time": str(results[4]),
+        "Job_Fail_Time": str(results[5]),
+        "Proxy_Used": results[6],
+        "Proxy_Provider": results[7]
+    }
+
+    ref = db.reference("/Stock_Results_Proxy")
+    ref.push().set(contents)
 
 
 def shutdown_stock_chkr():
