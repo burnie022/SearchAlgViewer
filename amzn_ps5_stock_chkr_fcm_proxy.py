@@ -443,10 +443,9 @@ def before_time(hour_min_sec="08:00:00"):
 
 
 def schedule_jobs(scheduler):
-    # scheduler.add_job(schedule_proxy_update_jobs, 'interval', seconds=60)
-    scheduler.add_job(report_availability) #, 'interval', seconds=120)
-    return
-
+    # # scheduler.add_job(schedule_proxy_update_jobs, 'interval', seconds=60)
+    # scheduler.add_job(report_availability) #, 'interval', seconds=120)
+    # return
     jobs = [
         # id   hr  min sec jitter
         ('00', '*', 0, 10, 0),
@@ -518,11 +517,10 @@ def clear_bad_proxies():
 
 
 def write_to_firebase(results):
-    ref = db.reference("/")
-    ref.set({
-        "Stock_Results_Proxy": -1
-    })
-
+    # ref = db.reference("/")
+    # ref.set({
+    #     "Stock_Results_Proxy": -1
+    # })
     contents = {
         "Time_checked": str(results[0]),
         "Available": results[1],
@@ -535,7 +533,7 @@ def write_to_firebase(results):
     }
 
     ref = db.reference("/Stock_Results_Proxy")
-    ref.push().set(contents)
+    ref.push(contents)
 
 
 def shutdown_stock_chkr():
